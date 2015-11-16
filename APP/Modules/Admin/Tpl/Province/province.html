@@ -1,0 +1,76 @@
+<Include file="Public:header" />
+            <!-- Page Content -->
+            <div id="page-content">
+                <!-- Breadcrumb -->
+                <!-- You can have the breadcrumb stick on scrolling just by adding the following attributes with their values (data-spy="affix" data-offset-top="250") -->
+                <!-- You can try it on other elements too :-), the sticky position and style can be adjusted in the css/main.css with .affix class -->
+                <ul class="breadcrumb" data-spy="affix" data-offset-top="250">
+                    <li>
+                        <a href="index.html"><i class="glyphicon-display"></i></a> <span class="divider"><i class="icon-angle-right"></i></span>
+                    </li>
+                    <li>
+                        <a href="#">系统管理</a> <span class="divider"><i class="icon-angle-right"></i></span>
+                    </li>
+                    <li class="active"><a href="">在职人员</a></li>
+                </ul>
+                <!-- END Breadcrumb -->
+
+                <div class="block block-themed">
+                    <!-- Two Column Form Title -->
+                    <div class="block-title">
+                        <h4>Two Column Form <small>Put it in the grid!</small></h4>
+                    </div>
+                    <!-- END Two Column Form Title -->
+
+                    <!-- Two Column Form Content -->
+                    <div class="block-content">
+                        <form action="{:U(GROUP_NAME.'/Province/add')}" method="post" class="form-inline" >
+                            <!-- div.row-fluid -->
+                            <div class="row-fluid">
+                                <!-- 1st Column -->
+                                <div class="span6">
+                                    <div class="control-group">
+                                        <label class="control-label" for="columns-text">省份名</label>
+                                        <div class="controls">
+                                            <input type="text" id="columns-text" name="ProvinceName" >
+                                            <span class="help-block"></span>
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label" for="columns-password">省份拼音简称</label>
+                                        <div class="controls">
+                                            <input type="text" id="columns-password" name="ProvinceSimpName">
+                                            <span class="help-block"></span>
+                                        </div>
+                                    </div>
+
+                                    
+                                </div>
+                                <!-- END 1st Column -->
+
+                            </div>
+                            <!-- END div.row-fluid -->
+                            <div class="form-actions">
+                                <button type="reset" class="btn btn-danger"><i class="icon-repeat"></i> 重置</button>
+                                <button type="submit" class="btn btn-success"><i class="icon-ok"></i> 提交</button>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- END Two Column Form Content -->
+                </div>
+
+                <!-- Dynamic Tables in the Grid -->
+                <h4 class="page-header">在职人员<small>在职人员</small></h4>
+
+                <!-- Dynamic Tables in the Grid Content -->
+
+                <!-- div.row-fluid -->
+
+
+
+                </div>
+                <!-- END div.row-fluid -->
+                <!-- END Dynamic Tables in the Grid -->
+            </div>
+            <!-- END Page Content -->
+<Include file="Public:footer" />

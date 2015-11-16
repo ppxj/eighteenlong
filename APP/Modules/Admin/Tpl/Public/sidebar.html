@@ -1,0 +1,636 @@
+<!--  Left Sidebar  -->
+<aside id="page-sidebar" class="nav-collapse collapse">
+                <!--
+                Wrapper for scrolling functionality
+                Used only if the .sticky class added above. You can remove it and you will have a sticky sidebar
+                without scrolling enabled when you set the sidebar to be sticky
+            -->
+            <div class="side-scrollable">
+                <!-- Mini Profile -->
+                <div class="mini-profile">
+                    <div class="mini-profile-options">
+                        <a href="javascript:void(0)" class="badge badge-info loading-on" data-toggle="tooltip" data-placement="right" title="" data-original-title="Refresh">
+                            <i class="icon-refresh"></i>
+                        </a>
+                        <a href="page_ready_shopping_cart.html" class="badge badge-warning" data-toggle="tooltip" data-placement="right" title="" data-original-title="6 Products">
+                            <i class="glyphicon-shopping_cart"></i>
+                        </a>
+                        <!-- Modal div is at the bottom of the page before including javascript code, we use .enable-tooltip class for the tooltip because data-toggle is used for modal -->
+                        <a href="#modal-user-account" class="badge badge-success enable-tooltip" role="button" data-toggle="modal" data-placement="right" title="" data-original-title="Settings">
+                            <i class="glyphicon-cogwheel"></i>
+                        </a>
+                        <a href="{:U(GROUP_NAME.'/Login/logout')}" class="badge badge-important" data-toggle="tooltip" data-placement="right" title="" data-original-title="Log out">
+                            <i class="icon-signout"></i>
+                        </a>
+                    </div>
+                    <a href="page_ready_user_profile.html">
+                        <img src="/eighteenlong/APP/Modules/Admin/Tpl/Public/img/template/avatar2@2x.jpg" alt="Avatar" class="img-circle" width="120" height="120">
+                    </a>
+                </div>
+                <!-- END Mini Profile -->
+
+                <!-- Sidebar Tabs -->
+                <div class="sidebar-tabs-con">
+                    <ul class="sidebar-tabs" data-toggle="tabs">
+                        <li class="active">
+                            <a href="#side-tab-menu"><i class="glyphicon-list"></i></a>
+                        </li>
+                        <li>
+                            <a href="#side-tab-extra"><i class="glyphicon-user"></i></a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="side-tab-menu">
+                            <!-- Primary Navigation -->
+                            <nav id="primary-nav">
+                                <ul>
+                                    <li>
+                                        <a href="index.html" class=" active"><i class="glyphicon-display"></i>Dashboard</a>
+                                    </li>                                        
+                                    <!-- 系统管理 -->
+                                    <li>
+                                        <a href="#" class="menu-link"><i class="icon-cogs"></i>系统管理<span>555</span></a>
+                                        <ul>  
+                                                  <!-- 总后台用户管理                             -->
+                                            <li>
+                                                <a href="#" class="submenu-link">总后台用户管理<span>555</span></a>
+                                                <ul>
+                                                    <li>
+                                                        <a href="{:U(GROUP_NAME.'/Adminuser/index')}" ><i class="icon-list"></i>总后台用户列表</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="{:U(GROUP_NAME.'/Adminuser/work')}">在职人员</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="{:U(GROUP_NAME.'/Adminuser/dimission')}">离职人员</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="{:U(GROUP_NAME.'/Adminuser/adminuser')}"><i class="icon-edit"></i>添加总后台用户</a>
+                                                    </li> 
+                                                </ul>
+                                            </li>
+                                            <!-- 权限动作管理 -->
+                                            <li>
+                                                <a href="#" class="submenu-link">权限动作管理<span>555</span></a>
+                                                <ul>
+                                                    <li>
+                                                        <a href="{:U(GROUP_NAME.'/Admin/index')}" ><i class="icon-list"></i>权限动作列表</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="{:U(GROUP_NAME.'/Admin/admin')}"><i class="icon-edit"></i>添加权限动作</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <!-- 权限模块管理 -->
+                                            <li>
+                                                <a href="#" class="submenu-link">权限模块管理<span>555</span></a>
+                                                <ul>
+                                                    <li>
+                                                        <a href="{:U(GROUP_NAME.'/Adminmodule/index')}" ><i class="icon-list"></i>权限模块列表</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="{:U(GROUP_NAME.'/Adminmodule/Adminmodule')}"><i class="icon-edit"></i>添加权限模块</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        <!-- 权限角色管理 -->
+                                            <li>
+                                                <a href="#" class="submenu-link">权限角色管理<span>555</span></a>
+                                                <ul>
+                                                    <li>
+                                                        <a href="{:U(GROUP_NAME.'/Adminrole/index')}" ><i class="icon-list"></i>权限角色列表</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="{:U(GROUP_NAME.'/Adminrole/adminrole')}"><i class="icon-edit"></i>添加权限角色</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <!-- 省份管理 -->
+                                            <li>
+                                                <a href="#" class="submenu-link">省份管理<span>555</span></a>
+                                                <ul>
+                                                    <li>
+                                                        <a href="{:U(GROUP_NAME.'/Province/index')}" ><i class="icon-list"></i>省份列表</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="{:U(GROUP_NAME.'/Province/province')}"><i class="icon-edit"></i>添加省份</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        <!-- 城市管理 -->
+                                            <li>
+                                            
+                                                <a href="#" class="submenu-link">城市管理<span>555</span></a>
+                                                <ul>
+                                                    <li>
+                                                        <a href="{:U(GROUP_NAME.'/City/index')}" ><i class="icon-list"></i>城市列表</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="{:U(GROUP_NAME.'/City/city')}"><i class="icon-edit"></i>添加城市</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        <!-- 区县管理 -->
+                                            <li>
+                                                <a href="#" class="submenu-link">区县管理<span>555</span></a>
+                                                <ul>
+                                                    <li>
+                                                        <a href="{:U(GROUP_NAME.'/District/index')}" ><i class="icon-list"></i>区县列表</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="{:U(GROUP_NAME.'/District/district')}"><i class="icon-edit"></i>添加区县</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                             <!-- 房屋类型管理 -->
+                                            <li>
+                                                <a href="#" class="submenu-link">房屋类型管理<span>555</span></a>
+                                                <ul>
+                                                    <li>
+                                                        <a href="{:U(GROUP_NAME.'/Categoryapartment/index')}" ><i class="icon-list"></i>房屋类型列表</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="{:U(GROUP_NAME.'/Categoryapartment/categoryapartment')}"><i class="icon-edit"></i>添加房屋类型</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                             <!-- 造价预算管理 -->
+                                            <li>
+                                                <a href="#" class="submenu-link">造价预算管理<span>555</span></a>
+                                                <ul>
+                                                    <li>
+                                                        <a href="{:U(GROUP_NAME.'/Categorycost/index')}" ><i class="icon-list"></i>造价预算列表</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="{:U(GROUP_NAME.'/Categorycost/categorycost')}"><i class="icon-edit"></i>添加造价预算</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                             <!-- 设计风格管理 -->
+                                            <li>
+                                                <a href="#" class="submenu-link">设计风格管理<span>555</span></a>
+                                                <ul>
+                                                    <li>
+                                                        <a href="{:U(GROUP_NAME.'/Categorystyle/index')}" ><i class="icon-list"></i>设计风格列表</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="{:U(GROUP_NAME.'/Categorystyle/categorystyle')}"><i class="icon-edit"></i>添加设计风格</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                             <!-- 设计专长管理 -->
+                                            <li>
+                                                <a href="#" class="submenu-link">设计专长管理<span>555</span></a>
+                                                <ul>
+                                                    <li>
+                                                        <a href="{:U(GROUP_NAME.'/Categoryexpertise/index')}" ><i class="icon-list"></i>设计专长列表</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="{:U(GROUP_NAME.'/Categoryexpertise/categoryexpertise')}"><i class="icon-edit"></i>添加设计专长</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            
+                                            <li>
+                                                <a href="page_ready_blank.html">Blank</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <!-- end 系统管理 -->
+
+                                    <!-- 内容发布 -->
+                                    <li>
+                                        <a href="#" class="menu-link"><i class="icon-folder-open"></i>内容发布<span>555</span></a>
+                                        <ul>                                        
+                                            <li>
+                                                <a href="#" class="submenu-link">文章管理<span>555</span></a>
+                                                <ul>
+                                                    <li>
+                                                        <a href="{:U(GROUP_NAME.'/User/index')}" ><i class="icon-list"></i>文章列表</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="{:U(GROUP_NAME.'/User/work')}"><i class="icon-edit"></i>发表文章</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            
+                                            <li>
+                                                <a href="#" class="submenu-link">效果图管理<span>555</span></a>
+                                                <ul>
+                                                    <li>
+                                                        <a href="page_ready_errors.html"><i class="icon-list"></i>效果图列表</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="page_ready_standalone_error.html"><i class="icon-edit"></i>发布效果图</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="page_ready_blank.html">Blank</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <!-- end 内容发布 -->
+                                    <!-- 网站管理 -->
+                                    <li>
+                                        <a href="#" class="menu-link"><i class="icon-folder-open"></i>网站管理<span>555</span></a>
+                                        <ul>                                        
+                                            <li>
+                                                <a href="#" class="submenu-link">业主评论管理<span>555</span></a>
+                                                <ul>
+                                                    <li>
+                                                        <a href="{:U(GROUP_NAME.'/User/index')}" ><i class="icon-list"></i>业主评论列表</a>
+                                                    </li>
+
+                                                </ul>
+                                            </li>
+                                            
+                                            <li>
+                                                <a href="#" class="submenu-link">企业管理<span>555</span></a>
+                                                <ul>
+                                                    <li>
+                                                        <a href="{:U(GROUP_NAME.'/User/index')}" ><i class="icon-list"></i>企业列表</a>
+                                                    </li>
+
+                                                </ul>
+                                            </li>
+
+                                            <li>
+                                                <a href="#" class="submenu-link">设计师管理<span>555</span></a>
+                                                <ul>
+                                                    <li>
+                                                        <a href="{:U(GROUP_NAME.'/User/index')}" ><i class="icon-list"></i>设计师列表</a>
+                                                    </li>
+
+                                                </ul>
+                                            </li>
+
+                                            <li>
+                                                <a href="#" class="submenu-link">案例管理<span>555</span></a>
+                                                <ul>
+                                                    <li>
+                                                        <a href="{:U(GROUP_NAME.'/User/index')}" ><i class="icon-list"></i>案例列表</a>
+                                                    </li>
+
+                                                </ul>
+                                            </li>
+
+                                            <li>
+                                                <a href="#" class="submenu-link">工地管理<span>555</span></a>
+                                                <ul>
+                                                    <li>
+                                                        <a href="{:U(GROUP_NAME.'/User/index')}" ><i class="icon-list"></i>工地列表</a>
+                                                    </li>
+
+                                                </ul>
+                                            </li>
+
+                                            <li>
+                                                <a href="#" class="submenu-link">资讯管理<span>555</span></a>
+                                                <ul>
+                                                    <li>
+                                                        <a href="{:U(GROUP_NAME.'/User/index')}" ><i class="icon-list"></i>资讯列表</a>
+                                                    </li>
+
+                                                </ul>
+                                            </li>
+
+                                            <li>
+                                                <a href="#" class="submenu-link">优惠管理<span>555</span></a>
+                                                <ul>
+                                                    <li>
+                                                        <a href="{:U(GROUP_NAME.'/User/index')}" ><i class="icon-list"></i>优惠列表</a>
+                                                    </li>
+
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="submenu-link">友情链接管理<span>555</span></a>
+                                                <ul>
+                                                    <li>
+                                                        <a href="{:U(GROUP_NAME.'/User/index')}" ><i class="icon-list"></i>友情链接列表</a>
+                                                    </li>
+
+                                                </ul>
+                                            </li>
+
+                                            <li>
+                                                <a href="#" class="submenu-link">分站负责人管理<span>555</span></a>
+                                                <ul>
+                                                    <li>
+                                                        <a href="{:U(GROUP_NAME.'/User/index')}" ><i class="icon-list"></i>分站负责人列表</a>
+                                                    </li>
+
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="submenu-link">分站横幅管理<span>555</span></a>
+                                                <ul>
+                                                    <li>
+                                                        <a href="{:U(GROUP_NAME.'/User/index')}" ><i class="icon-list"></i>分站横幅列表</a>
+                                                    </li>
+
+                                                </ul>
+                                            </li>
+
+                                            <li>
+                                                <a href="#" class="submenu-link">分站首页管理<span>555</span></a>
+                                                <ul>
+                                                    <li>
+                                                        <a href="{:U(GROUP_NAME.'/User/index')}" ><i class="icon-list"></i>分站首页列表</a>
+                                                    </li>
+
+                                                </ul>
+                                            </li>
+
+
+
+
+                                        </ul>
+                                    </li>
+                                    <!-- end 网站管理 -->
+
+                                    <!-- 装修管家 -->
+                                    <li>
+                                        <a href="#" class="menu-link"><i class="icon-folder-open"></i>装修管家<span>555</span></a>
+                                        <ul>                                        
+                                            <li>
+                                                <a href="#" class="submenu-link">分单管理<span>555</span></a>
+                                                <ul>
+                                                    <li>
+                                                        <a href="{:U(GROUP_NAME.'/User/index')}" ><i class="icon-list"></i>订单列表</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="{:U(GROUP_NAME.'/User/work')}"><i class="icon-edit"></i>发表文章</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            
+                                            <li>
+                                                <a href="page_ready_blank.html">Blank</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <!-- end 装修管家 -->
+
+                                    <!-- 电销电话 -->
+                                    <li>
+                                        <a href="#" class="menu-link"><i class="icon-folder-open"></i>电销电话<span>555</span></a>
+                                        <ul>                                        
+                                            <li>
+                                                <a href="#" class="submenu-link">我的订单<span>555</span></a>
+                                                <ul>
+                                                    <li>
+                                                        <a href="{:U(GROUP_NAME.'/User/index')}" ><i class="icon-list"></i>订单列表</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="{:U(GROUP_NAME.'/User/work')}"><i class="icon-edit"></i>添加订单</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            
+                                            <li>
+                                                <a href="page_ready_blank.html">Blank</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <!-- end 电销电话 -->
+
+                                    <!-- 修改密码 -->
+                                    <li>
+                                        <a href="#" class="menu-link"><i class="icon-folder-open"></i>修改密码<span>555</span></a>
+
+                                    </li>
+                                    <!-- end 修改密码 -->
+
+                                    <!-- 注销登录 -->
+                                    <li>
+                                        <a href="#" class="menu-link"><i class="icon-folder-open"></i>修改密码<span>555</span></a>
+
+                                    </li>
+                                    <!-- end注销登录 -->
+
+                                    <!-- 内容发布 -->
+
+                                    <!-- end 内容发布 -->
+                                    <li>
+                                        <a href="#" class="menu-link"><i class="glyphicon-vector_path_curve"></i>User Interface<span>9</span></a>
+                                        <ul>
+                                            <li>
+                                                <a href="page_ui_blocks.html">Blocks</a>
+                                            </li>
+                                            <li>
+                                                <a href="page_ui_grid.html">Grid</a>
+                                            </li>
+                                            <li>
+                                                <a href="page_ui_typography.html">Typography</a>
+                                            </li>
+                                            <li>
+                                                <a href="page_ui_navigation.html">Navigation</a>
+                                            </li>
+                                            <li>
+                                                <a href="page_ui_tabs_accordions.html">Tabs &amp; Accordions</a>
+                                            </li>
+                                            <li>
+                                                <a href="page_ui_buttons_dropdowns.html">Buttons &amp; Dropdowns</a>
+                                            </li>
+                                            <li>
+                                                <a href="page_ui_progress_bars.html">Progress Bars</a>
+                                            </li>
+                                            <li>
+                                                <a href="page_ui_carousel.html">Carousel</a>
+                                            </li>
+                                            <li>
+                                                <a href="page_ui_extras.html">Extras</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+
+                                    <li>
+                                        <a href="#" class="menu-link"><i class="glyphicon-table"></i>Tables<span>3</span></a>
+                                        <ul>
+                                            <li>
+                                                <a href="page_tables_static.html">Static</a>
+                                            </li>
+                                            <li>
+                                                <a href="page_tables_dynamic.html">Dynamic</a>
+                                            </li>
+                                            <li>
+                                                <a href="page_tables_editable.html">Editable</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="menu-link"><i class="glyphicon-more_windows"></i>Forms<span>7</span></a>
+                                        <ul>
+                                            <li>
+                                                <a href="page_forms_general.html">General</a>
+                                            </li>
+                                            <li>
+                                                <a href="page_forms_layouts_styles.html">Layouts &amp; Styles</a>
+                                            </li>
+                                            <li>
+                                                <a href="page_forms_pickers_grid.html">Pickers &amp; Grid</a>
+                                            </li>
+                                            <li>
+                                                <a href="page_forms_textareas_wysiwyg.html">Textareas &amp; WYSIWYG</a>
+                                            </li>
+                                            <li>
+                                                <a href="page_forms_upload_dropzone.html">File Upload &amp; Dropzone</a>
+                                            </li>
+                                            <li>
+                                                <a href="page_forms_validation.html">Validation</a>
+                                            </li>
+                                            <li>
+                                                <a href="page_forms_wizard.html">Wizard</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="menu-link"><i class="glyphicon-fire"></i>Components<span>10</span></a>
+                                        <ul>
+                                            <li>
+                                                <a href="page_comp_inbox.html">Inbox</a>
+                                            </li>
+                                            <li>
+                                                <a href="page_comp_chat.html">Chat</a>
+                                            </li>
+                                            <li>
+                                                <a href="page_comp_timeline.html">Timeline</a>
+                                            </li>
+                                            <li>
+                                                <a href="page_comp_tiles.html">Tiles</a>
+                                            </li>
+                                            <li>
+                                                <a href="page_comp_gallery.html">Gallery</a>
+                                            </li>
+                                            <li>
+                                                <a href="page_comp_charts.html">Charts</a>
+                                            </li>
+                                            <li>
+                                                <a href="page_comp_calendar.html">Calendar</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="submenu-link">Maps<span>2</span></a>
+                                                <ul>
+                                                    <li>
+                                                        <a href="page_comp_vector_maps.html">Vector Maps</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="page_comp_google_maps.html">Google Maps</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="page_comp_syntax_highlighting.html">Syntax Highlighting</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="menu-link"><i class="glyphicon-pizza"></i>Icon Packs<span>1</span></a>
+                                        <ul>
+                                            <li>
+                                                <a href="page_icons_glyphicons_pro.html">Glyphicons Pro</a>
+                                            </li>
+                                            <li>
+                                                <a href="page_icons_glyphicons_halflings_pro.html">Glyphicons Halflings Pro</a>
+                                            </li>
+                                            <li>
+                                                <a href="page_icons_fontawesome.html">FontAwesome</a>
+                                            </li>
+                                            <li>
+                                                <a href="page_icons_gemicon.html">Gemicon</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="menu-link"><i class="glyphicon-certificate"></i>Ready UI<span>12</span></a>
+                                        <ul>
+                                            <li>
+                                                <a href="page_ready_search_results.html">Search Results</a>
+                                            </li>
+                                            <li>
+                                                <a href="page_ready_user_profile.html">User Profile</a>
+                                            </li>
+                                            <li>
+                                                <a href="page_ready_pricing_tables.html">Pricing Tables</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="submenu-link">e-Shop<span>3</span></a>
+                                                <ul>
+                                                    <li>
+                                                        <a href="page_ready_product.html">Product</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="page_ready_products_list.html">Products List</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="page_ready_shopping_cart.html">Shopping Cart</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="page_ready_invoice.html">Invoice</a>
+                                            </li>
+                                            <li>
+                                                <a href="page_ready_article.html">Article</a>
+                                            </li>
+                                            <li>
+                                                <a href="page_ready_faq.html">FAQ</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="submenu-link">Errors<span>2</span></a>
+                                                <ul>
+                                                    <li>
+                                                        <a href="page_ready_errors.html">In-Page</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="page_ready_standalone_error.html">Standalone</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="page_ready_blank.html">Blank</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+
+                                    <li>
+                                        <a href="page_landing.html"><i class="glyphicon-leaf"></i>Landing Page</a>
+                                    </li>
+                                    <li>
+                                        <a href="page_login.html"><i class="glyphicon-power"></i>Login Page</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <!-- END Primary Navigation -->
+                        </div>
+                        <div class="tab-pane tab-pane-side" id="side-tab-extra">
+                            <h5><i class="icon-briefcase pull-right"></i>Balance</h5>
+                            <div class="side-stat text-center text-info"><strong>$25.230,<small>00</small></strong></div>
+
+                            <h5><i class="icon-dollar pull-right"></i>Earnings (today)</h5>
+                            <div class="side-stat text-center text-info"><strong>$1.752,<small>00</small></strong></div>
+
+                            <h5><i class="icon-shopping-cart pull-right"></i>Sales (today)</h5>
+                            <div class="side-stat text-center text-info"><strong>368</strong></div>
+
+                            <h5><i class="icon-shopping-cart pull-right"></i>Sales (this month)</h5>
+                            <div class="side-stat text-center text-success"><strong>+38%</strong></div>
+
+                            <h5><i class="icon-ticket pull-right"></i>Open Tickets</h5>
+                            <div class="side-stat text-center text-warning"><strong>23</strong></div>
+
+                            <h5><i class="icon-bug pull-right"></i>Bugs to fix</h5>
+                            <div class="side-stat text-center text-error"><strong>1</strong> (important)</div>
+                            <div class="side-stat text-center text-warning"><strong>3</strong> (normal)</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END Sidebar Tabs -->
+            </div>
+            <!-- END Wrapper for scrolling functionality -->
+        </aside>
+ <!-- END Left Sidebar

@@ -1,0 +1,20 @@
+{:U(GROUP_NAME.'/City/index/provinceid/1'.'+$(this).val()')};
+  <select name="sel" dir="rtl" onchange="window.location.href='<?php echo  {:U(GROUP_NAME.'/City/index')}?>';">
+  window.location.href='/system/city/index?provinceid/'+$(this).val();
+                  <select class="col-sm-4" id="ProvinceId" name="ProvinceId" 
+                onchange="window.location.href='{:U(GROUP_NAME.'/City/index')}';">
+                <option value="" selected="selected">请选择省份</option>
+                <option value="1">北京市</option>
+                <option value="2">test2</option>
+                <option value="3">test3</option>
+                </select>
+                <select name="ProvinceId" onchange="window.location.href='{}/eighteenlong/index.php/admin/city/Provinceid/'+$(this).val();">
+
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                </select>
+
+     // window.location.href="http://www.baidu.com";
+
+                <select name="ProvinceId"  onchange="window.location.href='{:U(GROUP_NAME.'/City/index/',array('ProvinceId'=>3))}'">//可以正确获得数据
