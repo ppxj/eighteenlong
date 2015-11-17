@@ -18,3 +18,47 @@
      // window.location.href="http://www.baidu.com";
 
                 <select name="ProvinceId"  onchange="window.location.href='{:U(GROUP_NAME.'/City/index/',array('ProvinceId'=>3))}'">//可以正确获得数据
+
+                onchange="window.location.href='{:U(GROUP_NAME.'/City/index/',array('ProvinceId'=>'{ value ',))}'"
+
+                   <script type="text/javascript">
+                function change(){
+                    // var b=$(this).val()
+                    // alert(b);
+                   var obj=document.getElementById("ProvinceId");
+                   var value=obj.value;
+                   alert(value);
+              
+                // "{:U(GROUP_NAME.'/City/index/',array('ProvinceId'=>value))}"
+                }
+               
+                </script>
+
+                <script type="text/javascript">
+$('.user').change(function(){
+    var user=$(this).val();
+    alert(user);
+    $.post("test.php", { "userid": user },//去后台查询数据
+               function(data){//data 返回的数据
+                  
+               }, "json");
+})
+</script>
+                          
+                <select name='user' class='user' >
+                <option value='1'>admin</option>
+                <option value='2'>user2</option>
+                </select>
+                <script type="text/javascript">
+                $('.user').change(function(){
+                    var user=$(this).val();
+                    alert(user);
+                    $.post("test.php", { "userid": user },//去后台查询数据
+                               function(data){//data 返回的数据
+                                  
+                               }, "json");
+                })
+                </script>
+
+                                   alert(value);
+              http://localhost/eighteenlong/index.php/admin/city/index/ProvinceId/3.html

@@ -6,6 +6,8 @@
 			$data['ProvinceId']=$ProvinceId;
 			$dao=M('Cities');
 			$this->list=$dao->where("ProvinceId=$ProvinceId")->select();
+			$this->provinces=M('provinces')->select();
+			$this->$a=M('provinces')->field('ProvinceName')->select();
 			$this->display();
 		}
 		Public function city(){

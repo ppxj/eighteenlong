@@ -395,16 +395,16 @@
                                                 <a href="#" class="submenu-link">总后台用户管理<span>555</span></a>
                                                 <ul>
                                                     <li>
-                                                        <a href="<?php echo U(GROUP_NAME.'/AdminUser/index');?>" ><i class="icon-list"></i>总后台用户列表</a>
+                                                        <a href="<?php echo U(GROUP_NAME.'/Adminuser/index');?>" ><i class="icon-list"></i>总后台用户列表</a>
                                                     </li>
                                                     <li>
-                                                        <a href="<?php echo U(GROUP_NAME.'/AdminUser/work');?>">在职人员</a>
+                                                        <a href="<?php echo U(GROUP_NAME.'/Adminuser/work');?>">在职人员</a>
                                                     </li>
                                                     <li>
-                                                        <a href="<?php echo U(GROUP_NAME.'/AdminUser/dimission');?>">离职人员</a>
+                                                        <a href="<?php echo U(GROUP_NAME.'/Adminuser/dimission');?>">离职人员</a>
                                                     </li>
                                                     <li>
-                                                        <a href="<?php echo U(GROUP_NAME.'/AdminUser/user');?>"><i class="icon-edit"></i>添加总后台用户</a>
+                                                        <a href="<?php echo U(GROUP_NAME.'/Adminuser/adminuser');?>"><i class="icon-edit"></i>添加总后台用户</a>
                                                     </li> 
                                                 </ul>
                                             </li>

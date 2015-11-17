@@ -21,24 +21,21 @@
                         <thead>
                             <tr>
                                 <th class="span1 text-center hidden-phone">编号&nbsp;&nbsp;</th>
-                                <th><i class="icon-user"></i>&nbsp;&nbsp;备注</th>
-                                <th class="hidden-phone hidden-tablet"><i class="icon-lock bigger-110 hidden-480"></i>&nbsp;&nbsp;</i>是否锁定</th>
-                                <th class="span2 hidden-phone"></th>
-                                <th class="span1 text-center"><i class="icon-bolt">用户名</i></th>
+                                <th class="span2 hidden-phone"><i class="icon-user"></i>&nbsp;&nbsp;省份名</th>
+                                <th class="span2 hidden-phone">省份简称</th>
+                                <th class="span2 hidden-phone"><i class="icon-lock bigger-110 hidden-480"></i>&nbsp;&nbsp;</i>是否开放</th>
+                                <th class="span1 text-center"><i class="icon-bolt"></i></th>
                             </tr>
                         </thead>
                         <tbody>
 
-				
-						<foreach name="list" item="v">
+                
+                        <foreach name="list" item="v">
                             <tr>
-                                <td class="span1 text-center hidden-phone">{$v.AdminUserId}</td>
-                                <td><a href="javascript:void(0)">备注下</a></td>
-                                <td class="hidden-phone hidden-tablet">
-                                
-                                
-                                <if condition="($v.IsLocked eq 1)"> <i class="icon-lock"></i>&nbsp;&nbsp;锁定 <else /> <i class="icon-unlock"></i>&nbsp;&nbsp;未锁定 </if>
-                                </td>
+                                <td class="span1 text-center hidden-phone">{$v.DistrictId}</td>
+                                <td><a href="javascript:void(0)">{$v.DistrictName}</a></td>
+                                <td class="span1 text-center">{$v.DistrictSimpName}</td>
+                                <td class="hidden-phone hidden-tablet"><if condition="$v.IsOpen eq 1">开放<else />未开放</if></td>
                                 <td class="span2 hidden-phone"><span class="label label-info"><div class="btn-group">
                                     <a class="btn btn-xs btn-info" href="/system/adminuser/Edit/23" title="编辑">
                                         <i class="icon-edit bigger-120"></i>
@@ -55,16 +52,15 @@
 
 
                                 </div></span></td>
-                                <td class="span1 text-center">
-                                    {$v.UserName}
-                                </td>
+                               
+                               
                             </tr>
                         </foreach>    
 
                       </tbody>
 
                     </table>
-						  {$page}  
+                       
                 </div>
  
                 <!-- END Dynamic Tables Section -->

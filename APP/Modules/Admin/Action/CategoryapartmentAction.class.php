@@ -5,7 +5,7 @@
 			$this->list=$dao->select();
 			$this->display();
 		}
-		Public function (){
+		Public function categoryapartment(){
 			$this->display();
 		}
 		Public function add(){

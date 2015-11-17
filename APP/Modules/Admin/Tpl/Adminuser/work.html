@@ -34,7 +34,9 @@
                             <tr>
                                 <td class="span1 text-center hidden-phone">{$v.AdminUserId}</td>
                                 <td><a href="javascript:void(0)">{$v.UserName}</a></td>
-                                <td class="hidden-phone hidden-tablet">{$v.IsLocked}<i class="icon-unlock"></i>未锁定</td>
+                                <td class="hidden-phone hidden-tablet">
+                                  <if condition="($v.IsLocked eq 1)"> <i class="icon-lock"></i>&nbsp;&nbsp;锁定 <else /> <i class="icon-unlock"></i>&nbsp;&nbsp;未锁定 </if>
+                                </td>
                                 <td class="span2 hidden-phone"><span class="label label-info"><div class="btn-group">
                                     <a class="btn btn-xs btn-info" href="/system/adminuser/Edit/23" title="编辑">
                                         <i class="icon-edit bigger-120"></i>

@@ -992,9 +992,9 @@
                         <a href="index.html"><i class="glyphicon-display"></i></a> <span class="divider"><i class="icon-angle-right"></i></span>
                     </li>
                     <li>
-                        <a href="#">系统管理</a> <span class="divider"><i class="icon-angle-right"></i></span>
+                        <a href="#">Tables</a> <span class="divider"><i class="icon-angle-right"></i></span>
                     </li>
-                    <li class="active"><a href="">离职人员</a></li>
+                    <li class="active"><a href="">Dynamic</a></li>
                 </ul>
                 <!-- END Breadcrumb -->
 
@@ -1004,21 +1004,20 @@
                         <thead>
                             <tr>
                                 <th class="span1 text-center hidden-phone">编号&nbsp;&nbsp;</th>
-                                <th><i class="icon-user"></i>&nbsp;&nbsp;备注</th>
-                                <th class="hidden-phone hidden-tablet"><i class="icon-lock bigger-110 hidden-480"></i>&nbsp;&nbsp;</i>离职人员</th>
-                                <th class="span2 hidden-phone"></th>
-                                <th class="span1 text-center"><i class="icon-bolt"></i>用户名</th>
+                                <th class="span2 hidden-phone"><i class="icon-user"></i>&nbsp;&nbsp;省份名</th>
+                                <th class="span2 hidden-phone">省份简称</th>
+                                <th class="span2 hidden-phone"><i class="icon-lock bigger-110 hidden-480"></i>&nbsp;&nbsp;</i>是否开放</th>
+                                <th class="span1 text-center"><i class="icon-bolt"></i></th>
                             </tr>
                         </thead>
                         <tbody>
 
-				
-						<?php if(is_array($list)): foreach($list as $key=>$v): ?><tr>
-                                <td class="span1 text-center hidden-phone"><?php echo ($v["AdminUserId"]); ?></td>
-                                <td><a href="javascript:void(0)"></a>备注</td>
-                                <td class="hidden-phone hidden-tablet">
-                                  <?php if(($v["IsLocked"] == 1)): ?><i class="icon-lock"></i>&nbsp;&nbsp;锁定 <?php else: ?> <i class="icon-unlock"></i>&nbsp;&nbsp;未锁定<?php endif; ?>
-                                </td>
+                
+                        <?php if(is_array($list)): foreach($list as $key=>$v): ?><tr>
+                                <td class="span1 text-center hidden-phone"><?php echo ($v["DistrictId"]); ?></td>
+                                <td><a href="javascript:void(0)"><?php echo ($v["DistrictName"]); ?></a></td>
+                                <td class="span1 text-center"><?php echo ($v["DistrictSimpName"]); ?></td>
+                                <td class="hidden-phone hidden-tablet"><?php if($v["IsOpen"] == 1): ?>开放<?php else: ?>未开放<?php endif; ?></td>
                                 <td class="span2 hidden-phone"><span class="label label-info"><div class="btn-group">
                                     <a class="btn btn-xs btn-info" href="/system/adminuser/Edit/23" title="编辑">
                                         <i class="icon-edit bigger-120"></i>
@@ -1029,33 +1028,31 @@
                                     <a class="btn btn-xs btn-warning" href="/system/adminuser/reset/23" title="重置密码" onclick="return confirm('确定重置密码？')">
                                         <i class="icon-key bigger-120"></i>
                                     </a>
-                                     <a href="javascript:void(0)" data-toggle="tooltip" title="Edit" class="btn btn-mini btn-success"><i class="icon-pencil"></i></a>
+
+                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Edit" class="btn btn-mini btn-success"><i class="icon-pencil"></i></a>
                                         <a href="javascript:void(0)" data-toggle="tooltip" title="Delete" class="btn btn-mini btn-danger"><i class="icon-remove"></i></a>
 
+
                                 </div></span></td>
-                                <td class="span1 text-center">
-                                    <?php echo ($v["UserName"]); ?>
-                                </td>
+                               
+                               
                             </tr><?php endforeach; endif; ?>    
 
                       </tbody>
 
                     </table>
-						  <?php echo ($page); ?>  
+                       
                 </div>
  
                 <!-- END Dynamic Tables Section -->
 
                 <!-- Dynamic Tables in the Grid -->
-                <h4 class="page-header">离职人员<small>离职人员</small></h4>
+                <h4 class="page-header">Dynamic Tables <small>In the grid</small></h4>
 
                 <!-- Dynamic Tables in the Grid Content -->
 
                 <!-- div.row-fluid -->
 
-
-
-                </div>
                 <!-- END div.row-fluid -->
                 <!-- END Dynamic Tables in the Grid -->
             </div>

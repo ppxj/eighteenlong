@@ -1,15 +1,15 @@
 <?php 
-	Class CategorycostAction extends CommonAction{
+	Class DistrictAction extends CommonAction{
 		Public function index(){
-			$dao=M('categorycosts');
+			$dao=M('districts');
 			$this->list=$dao->select();
 			$this->display();
 
 		}
-		Public function (){
+		Public function districts(){
 			$this->display();
 		}
-		Public function add(){
+		Public function  add(){
 			p($_POST);
 		}
 	}

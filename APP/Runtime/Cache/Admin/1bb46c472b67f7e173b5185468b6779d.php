@@ -1011,45 +1011,30 @@
                             </tr>
                         </thead>
                         <tbody>
-               ?provinceid='+$(this).val();
-                
-                <select name='user' class='user' >
-<option value='1'>admin</option>
-<option value='2'>user2</option>
-</select>
-<script type="text/javascript">
-$('.user').change(function(){
-    var user=$(this).val();
-    $.post("test.php", { "userid": user },//去后台查询数据
-               function(data), "json");
-})
-</script>
+   
+  
               
                 
               
-<select class='ProvinceId' id="ProvinceId" name="ProvinceId" onchange="window.location.href='<?php echo U(GROUP_NAME.'/City/index/');?>">
+                <select id="ProvinceId" class='ProvinceId' name="ProvinceId" onchange="province()" >
 
-                <option selected="selected">x选择x</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-                <option value="88">8</option>
-
+                <option selected="selected">--选择省份--<?php echo ($a); ?></option>
+                <?php if(is_array($provinces)): foreach($provinces as $key=>$v): ?><option value="<?php echo ($v["ProvinceId"]); ?>"><?php echo ($v["ProvinceName"]); ?></option><?php endforeach; endif; ?>
+              
+                </select>
+           
                 <script type="text/javascript">
-                function change(){
-                    // var b=$(this).val()
-                    // alert(b);
+               function province(){
                    var obj=document.getElementById("ProvinceId");
                    var value=obj.value;
-                   alert(value);
-              
-                "<?php echo U(GROUP_NAME.'/City/index/',array('ProvinceId'=>value));?>"
-                }
-               
+                   document.location = 'http://localhost/eighteenlong/index.php/admin/city/index/?ProvinceId=' + value; 
+               }
                 </script>
-                </select>
 
-              <a href="<?php echo U(GROUP_NAME.'/City/index/',array('ProvinceId'=>5));?>">mark</a>             
+             
+               
+
+              <a href="<?php echo U(GROUP_NAME.'/City/index/',array('ProvinceId'=>3));?>">mark</a>             
              
                 </form>
                         <?php if(is_array($list)): foreach($list as $key=>$v): ?><tr>

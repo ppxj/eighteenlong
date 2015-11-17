@@ -1016,7 +1016,11 @@
 						<?php if(is_array($list)): foreach($list as $key=>$v): ?><tr>
                                 <td class="span1 text-center hidden-phone"><?php echo ($v["AdminUserId"]); ?></td>
                                 <td><a href="javascript:void(0)">备注下</a></td>
-                                <td class="hidden-phone hidden-tablet"><?php echo ($v["IsLocked"]); ?></td>
+                                <td class="hidden-phone hidden-tablet">
+                                
+                                
+                                <?php if(($v["IsLocked"] == 1)): ?><i class="icon-lock"></i>&nbsp;&nbsp;锁定 <?php else: ?> <i class="icon-unlock"></i>&nbsp;&nbsp;未锁定<?php endif; ?>
+                                </td>
                                 <td class="span2 hidden-phone"><span class="label label-info"><div class="btn-group">
                                     <a class="btn btn-xs btn-info" href="/system/adminuser/Edit/23" title="编辑">
                                         <i class="icon-edit bigger-120"></i>
