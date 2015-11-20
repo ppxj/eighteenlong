@@ -385,7 +385,7 @@
                                 <ul>
                                     <li>
                                         <a href="index.html" class=" active"><i class="glyphicon-display"></i>Dashboard</a>
-                                    </li>                                        z
+                                    </li>                                        
                                     <!-- 系统管理 -->
                                     <li>
                                         <a href="#" class="menu-link"><i class="icon-cogs"></i>系统管理<span>555</span></a>
@@ -395,7 +395,7 @@
                                                 <a href="#" class="submenu-link">总后台用户管理<span>555</span></a>
                                                 <ul>
                                                     <li>
-                                                        <a href="<?php echo U(GROUP_NAME.'/Adminuser/index');?>"><i class="icon-list"></i>总后台用户列表</a>
+                                                        <a href="<?php echo U(GROUP_NAME.'/Adminuser/index');?>" ><i class="icon-list"></i>总后台用户列表</a>
                                                     </li>
                                                     <li>
                                                         <a href="<?php echo U(GROUP_NAME.'/Adminuser/work');?>">在职人员</a>
@@ -437,8 +437,7 @@
                                                 <a href="#" class="submenu-link">权限角色管理<span>555</span></a>
                                                 <ul>
                                                     <li>
-                                                        <!-- <a href="<?php echo U(GROUP_NAME.'/Adminrole/index');?>" ><i class="icon-list"></i>权限角色列表</a> -->
-                                                        <a href="javascript:void(0)" data-name="<?php echo U(GROUP_NAME.'/Adminrole/index');?>" id="click"><i class="icon-list"></i>权限角色列表</a>
+                                                        <a href="<?php echo U(GROUP_NAME.'/Adminrole/index');?>" ><i class="icon-list"></i>权限角色列表</a>
                                                     </li>
                                                     <li>
                                                         <a href="<?php echo U(GROUP_NAME.'/Adminrole/adminrole');?>"><i class="icon-edit"></i>添加权限角色</a>
@@ -1005,48 +1004,75 @@
 
                 <!-- Dynamic Tables Section -->
                 <div class="block-section">
-                    <table id="example-datatables" class="table table-bordered table-hover">
-                        <thead>
-                            <tr>
-                                <th class="span1 text-center hidden-phone">编号&nbsp;&nbsp;</th>
-                                <th><i class="icon-user"></i>&nbsp;&nbsp;动作名</th>
-                                <th class="hidden-phone hidden-tablet"><i class="icon-lock bigger-110 hidden-480"></i>&nbsp;&nbsp;</i>动作标识</th>
-                                <th class="span2 hidden-phone"></th>
-                                <th class="span1 text-center"><i class="icon-bolt">用户名</i></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-
-				
-						<?php if(is_array($list)): foreach($list as $key=>$v): ?><tr>
-                                <td class="span1 text-center hidden-phone"><?php echo ($v["AdminRoleId"]); ?></td>
-                                <td><a href="javascript:void(0)"><?php echo ($v["Name"]); ?></a></td>
-                                <td class="hidden-phone hidden-tablet"><?php echo ($v["ModuleKey"]); ?></td>
-                                <td class="span2 hidden-phone"><span class="label label-info"><div class="btn-group">
-                                    <a class="btn btn-xs btn-info" href="/system/adminuser/Edit/23" title="编辑">
+                   <table id="sample-table-1" class="table table-striped table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>编号</th>
+                        <th>文章类型</th>
+                        <th>标题</th>
+                        <th>
+                            <i class="icon-time bigger-110 hidden-480"></i>
+                            添加时间
+                        </th>
+                        <th>
+                            <i class="icon-time bigger-110 hidden-480"></i>
+                            更新时间
+                        </th>
+                        <th class="hidden-480">浏览量</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>装修技巧</td>
+                            <td>
+                                <a href="http://www.18long.com/articles/761.html">业主的感谢信</a>
+                            </td>
+                            <td>2015/11/14</td>
+                            <td>2015/11/14</td>
+                            <td class="hidden-480">
+                                6
+                            </td>
+                            <td>
+                                <div class="btn-group">
+                                    <a class="btn btn-xs btn-info" href="/Publisher/SiteArticle/Edit/761">
                                         <i class="icon-edit bigger-120"></i>
                                     </a>
-                                    <a class="btn btn-xs btn-danger" href="/system/adminuser/switchlock/23" title="解锁" onclick="return confirm('确定解锁？')">
-                                        <i class="icon-unlock bigger-120"></i>
+                                    <a class="btn btn-xs btn-danger" href="/Publisher/SiteArticle/Del/761" onclick="return confirm('确定删除？')">
+                                        <i class="icon-trash bigger-120"></i>
                                     </a>
-                                    <a class="btn btn-xs btn-warning" href="/system/adminuser/reset/23" title="重置密码" onclick="return confirm('确定重置密码？')">
-                                        <i class="icon-key bigger-120"></i>
+                                </div>
+                            </td>
+                        </tr>
+                    <?php if(is_array($list)): foreach($list as $key=>$v): ?><tr>
+                            <td><?php echo ($v["SiteArticleId"]); ?></td>
+                            <td><?php echo ($v["Type"]); ?></td>
+                            <td>
+                                <a href="http://www.18long.com/articles/761.html"><?php echo ($v["Title"]); ?></a>
+                            </td>
+                            <td><?php echo ($v["AddTime"]); ?></td>
+                            <td><?php echo ($v["UpdateTime"]); ?></td>
+                            <td class="hidden-480">
+                                <?php echo ($v["ViewCount"]); ?>
+                            </td>
+                            <td>
+                                <div class="btn-group">
+                                    <a class="btn btn-xs btn-info" href="/Publisher/SiteArticle/Edit/761">
+                                        <i class="icon-edit bigger-120"></i>
                                     </a>
-
-                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Edit" class="btn btn-mini btn-success"><i class="icon-pencil"></i></a>
-                                        <a href="javascript:void(0)" data-toggle="tooltip" title="Delete" class="btn btn-mini btn-danger"><i class="icon-remove"></i></a>
-
-
-                                </div></span></td>
-                                <td class="span1 text-center">
-                              
-                                </td>
-                            </tr><?php endforeach; endif; ?>    
-
-                      </tbody>
-
-                    </table>
-
+                                    <a class="btn btn-xs btn-danger" href="/Publisher/SiteArticle/Del/761" onclick="return confirm('确定删除？')">
+                                        <i class="icon-trash bigger-120"></i>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr><?php endforeach; endif; ?>
+                        
+                       
+                     
+                </tbody>
+            </table>
+                         
                 </div>
  
                 <!-- END Dynamic Tables Section -->
@@ -1218,9 +1244,6 @@
         <!-- Jquery plugins and custom javascript code -->
         <script src="../Public/js/plugins.js"></script>
         <script src="../Public/js/main.js"></script>
-       
-        <script type="text/javascript" src="../Public/js/menu.js"></script>
-
         <!-- Javascript code only for this page -->
         <script>
             $(function() {

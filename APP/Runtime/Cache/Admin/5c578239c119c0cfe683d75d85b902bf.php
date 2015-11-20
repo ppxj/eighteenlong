@@ -357,7 +357,7 @@
                         <!-- Modal div is at the bottom of the page before including javascript code, we use .enable-tooltip class for the tooltip because data-toggle is used for modal -->
                         <a href="#modal-user-account" class="badge badge-success enable-tooltip" role="button" data-toggle="modal" data-placement="right" title="" data-original-title="Settings">
                             <i class="glyphicon-cogwheel"></i>
-                        </a>
+                            </a>
                         <a href="<?php echo U(GROUP_NAME.'/Login/logout');?>" class="badge badge-important" data-toggle="tooltip" data-placement="right" title="" data-original-title="Log out">
                             <i class="icon-signout"></i>
                         </a>
@@ -395,16 +395,16 @@
                                                 <a href="#" class="submenu-link">总后台用户管理<span>555</span></a>
                                                 <ul>
                                                     <li>
-                                                        <a href="<?php echo U(GROUP_NAME.'/Adminuser/index');?>"><i class="icon-list"></i>总后台用户列表</a>
+                                                        <a href="<?php echo U(GROUP_NAME.'/System/adminuser');?>"><i class="icon-list"></i>总后台用户列表</a>
                                                     </li>
                                                     <li>
-                                                        <a href="<?php echo U(GROUP_NAME.'/Adminuser/work');?>">在职人员</a>
+                                                        <a href="<?php echo U(GROUP_NAME.'/System/adminuserWork');?>">在职人员</a>
                                                     </li>
                                                     <li>
-                                                        <a href="<?php echo U(GROUP_NAME.'/Adminuser/dimission');?>">离职人员</a>
+                                                        <a href="<?php echo U(GROUP_NAME.'/System/adminuserDimission');?>">离职人员</a>
                                                     </li>
                                                     <li>
-                                                        <a href="<?php echo U(GROUP_NAME.'/Adminuser/adminuser');?>"><i class="icon-edit"></i>添加总后台用户</a>
+                                                        <a href="<?php echo U(GROUP_NAME.'/System/addAdminuser');?>"><i class="icon-edit"></i>添加总后台用户</a>
                                                     </li> 
                                                 </ul>
                                             </li>
@@ -413,10 +413,10 @@
                                                 <a href="#" class="submenu-link">权限动作管理<span>555</span></a>
                                                 <ul>
                                                     <li>
-                                                        <a href="<?php echo U(GROUP_NAME.'/Admin/index');?>" ><i class="icon-list"></i>权限动作列表</a>
+                                                        <a href="<?php echo U(GROUP_NAME.'/System/adminaction');?>" ><i class="icon-list"></i>权限动作列表</a>
                                                     </li>
                                                     <li>
-                                                        <a href="<?php echo U(GROUP_NAME.'/Admin/admin');?>"><i class="icon-edit"></i>添加权限动作</a>
+                                                        <a href="<?php echo U(GROUP_NAME.'/System/addadminaction');?>"><i class="icon-edit"></i>添加权限动作</a>
                                                     </li>
                                                 </ul>
                                             </li>
@@ -425,10 +425,10 @@
                                                 <a href="#" class="submenu-link">权限模块管理<span>555</span></a>
                                                 <ul>
                                                     <li>
-                                                        <a href="<?php echo U(GROUP_NAME.'/Adminmodule/index');?>" ><i class="icon-list"></i>权限模块列表</a>
+                                                        <a href="<?php echo U(GROUP_NAME.'/System/adminModule');?>" ><i class="icon-list"></i>权限模块列表</a>
                                                     </li>
                                                     <li>
-                                                        <a href="<?php echo U(GROUP_NAME.'/Adminmodule/Adminmodule');?>"><i class="icon-edit"></i>添加权限模块</a>
+                                                        <a href="<?php echo U(GROUP_NAME.'/System/');?>"><i class="icon-edit"></i>添加权限模块</a>
                                                     </li>
                                                 </ul>
                                             </li>
@@ -438,10 +438,10 @@
                                                 <ul>
                                                     <li>
                                                         <!-- <a href="<?php echo U(GROUP_NAME.'/Adminrole/index');?>" ><i class="icon-list"></i>权限角色列表</a> -->
-                                                        <a href="javascript:void(0)" data-name="<?php echo U(GROUP_NAME.'/Adminrole/index');?>" id="click"><i class="icon-list"></i>权限角色列表</a>
+                                                        <a href="javascript:void(0)" data-name="<?php echo U(GROUP_NAME.'/System/adminRole');?>" id="click"><i class="icon-list"></i>权限角色列表</a>
                                                     </li>
                                                     <li>
-                                                        <a href="<?php echo U(GROUP_NAME.'/Adminrole/adminrole');?>"><i class="icon-edit"></i>添加权限角色</a>
+                                                        <a href="<?php echo U(GROUP_NAME.'/System/adminrole');?>"><i class="icon-edit"></i>添加权限角色</a>
                                                     </li>
                                                 </ul>
                                             </li>
@@ -450,10 +450,10 @@
                                                 <a href="#" class="submenu-link">省份管理<span>555</span></a>
                                                 <ul>
                                                     <li>
-                                                        <a href="<?php echo U(GROUP_NAME.'/Province/index');?>" ><i class="icon-list"></i>省份列表</a>
+                                                        <a href="<?php echo U(GROUP_NAME.'/System/province');?>" ><i class="icon-list"></i>省份列表</a>
                                                     </li>
                                                     <li>
-                                                        <a href="<?php echo U(GROUP_NAME.'/Province/province');?>"><i class="icon-edit"></i>添加省份</a>
+                                                        <a href="<?php echo U(GROUP_NAME.'/System/addProvince');?>"><i class="icon-edit"></i>添加省份</a>
                                                     </li>
                                                 </ul>
                                             </li>
@@ -463,10 +463,10 @@
                                                 <a href="#" class="submenu-link">城市管理<span>555</span></a>
                                                 <ul>
                                                     <li>
-                                                        <a href="<?php echo U(GROUP_NAME.'/City/index');?>" ><i class="icon-list"></i>城市列表</a>
+                                                        <a href="<?php echo U(GROUP_NAME.'/System/city');?>" ><i class="icon-list"></i>城市列表</a>
                                                     </li>
                                                     <li>
-                                                        <a href="<?php echo U(GROUP_NAME.'/City/city');?>"><i class="icon-edit"></i>添加城市</a>
+                                                        <a href="<?php echo U(GROUP_NAME.'/System/addCity');?>"><i class="icon-edit"></i>添加城市</a>
                                                     </li>
                                                 </ul>
                                             </li>
@@ -475,10 +475,10 @@
                                                 <a href="#" class="submenu-link">区县管理<span>555</span></a>
                                                 <ul>
                                                     <li>
-                                                        <a href="<?php echo U(GROUP_NAME.'/District/index');?>" ><i class="icon-list"></i>区县列表</a>
+                                                        <a href="<?php echo U(GROUP_NAME.'/System/district');?>" ><i class="icon-list"></i>区县列表</a>
                                                     </li>
                                                     <li>
-                                                        <a href="<?php echo U(GROUP_NAME.'/District/district');?>"><i class="icon-edit"></i>添加区县</a>
+                                                        <a href="<?php echo U(GROUP_NAME.'/System/addDistrict');?>"><i class="icon-edit"></i>添加区县</a>
                                                     </li>
                                                 </ul>
                                             </li>
@@ -487,10 +487,10 @@
                                                 <a href="#" class="submenu-link">房屋类型管理<span>555</span></a>
                                                 <ul>
                                                     <li>
-                                                        <a href="<?php echo U(GROUP_NAME.'/Categoryapartment/index');?>" ><i class="icon-list"></i>房屋类型列表</a>
+                                                        <a href="<?php echo U(GROUP_NAME.'/System/categoryApartment');?>" ><i class="icon-list"></i>房屋类型列表</a>
                                                     </li>
                                                     <li>
-                                                        <a href="<?php echo U(GROUP_NAME.'/Categoryapartment/categoryapartment');?>"><i class="icon-edit"></i>添加房屋类型</a>
+                                                        <a href="<?php echo U(GROUP_NAME.'/System/addCategoryapartment');?>"><i class="icon-edit"></i>添加房屋类型</a>
                                                     </li>
                                                 </ul>
                                             </li>
@@ -499,10 +499,10 @@
                                                 <a href="#" class="submenu-link">造价预算管理<span>555</span></a>
                                                 <ul>
                                                     <li>
-                                                        <a href="<?php echo U(GROUP_NAME.'/Categorycost/index');?>" ><i class="icon-list"></i>造价预算列表</a>
+                                                        <a href="<?php echo U(GROUP_NAME.'/System/categoryCost');?>" ><i class="icon-list"></i>造价预算列表</a>
                                                     </li>
                                                     <li>
-                                                        <a href="<?php echo U(GROUP_NAME.'/Categorycost/categorycost');?>"><i class="icon-edit"></i>添加造价预算</a>
+                                                        <a href="<?php echo U(GROUP_NAME.'/System/addCategoryCost');?>"><i class="icon-edit"></i>添加造价预算</a>
                                                     </li>
                                                 </ul>
                                             </li>
@@ -511,10 +511,10 @@
                                                 <a href="#" class="submenu-link">设计风格管理<span>555</span></a>
                                                 <ul>
                                                     <li>
-                                                        <a href="<?php echo U(GROUP_NAME.'/Categorystyle/index');?>" ><i class="icon-list"></i>设计风格列表</a>
+                                                        <a href="<?php echo U(GROUP_NAME.'/System/categoryStyle');?>" ><i class="icon-list"></i>设计风格列表</a>
                                                     </li>
                                                     <li>
-                                                        <a href="<?php echo U(GROUP_NAME.'/Categorystyle/categorystyle');?>"><i class="icon-edit"></i>添加设计风格</a>
+                                                        <a href="<?php echo U(GROUP_NAME.'/System/addCategorystyle');?>"><i class="icon-edit"></i>添加设计风格</a>
                                                     </li>
                                                 </ul>
                                             </li>
@@ -523,10 +523,10 @@
                                                 <a href="#" class="submenu-link">设计专长管理<span>555</span></a>
                                                 <ul>
                                                     <li>
-                                                        <a href="<?php echo U(GROUP_NAME.'/Categoryexpertise/index');?>" ><i class="icon-list"></i>设计专长列表</a>
+                                                        <a href="<?php echo U(GROUP_NAME.'/System/categoryExpertise');?>" ><i class="icon-list"></i>设计专长列表</a>
                                                     </li>
                                                     <li>
-                                                        <a href="<?php echo U(GROUP_NAME.'/Categoryexpertise/categoryexpertise');?>"><i class="icon-edit"></i>添加设计专长</a>
+                                                        <a href="<?php echo U(GROUP_NAME.'/System/addCategoryexpertise');?>"><i class="icon-edit"></i>添加设计专长</a>
                                                     </li>
                                                 </ul>
                                             </li>
@@ -1019,9 +1019,12 @@
 
 				
 						<?php if(is_array($list)): foreach($list as $key=>$v): ?><tr>
-                                <td class="span1 text-center hidden-phone"><?php echo ($v["AdminRoleId"]); ?></td>
+                                <td class="span1 text-center hidden-phone"><?php echo ($v["CategoryCostId"]); ?></td>
                                 <td><a href="javascript:void(0)"><?php echo ($v["Name"]); ?></a></td>
-                                <td class="hidden-phone hidden-tablet"><?php echo ($v["ModuleKey"]); ?></td>
+                                <td class="hidden-phone hidden-tablet">
+                                 <?php if($v['IsOpen']): ?><i class="icon-unlock"></i>未锁定<?php else: ?><i class="icon-lock"></i>锁定<?php endif; ?>
+                              
+                                </td>
                                 <td class="span2 hidden-phone"><span class="label label-info"><div class="btn-group">
                                     <a class="btn btn-xs btn-info" href="/system/adminuser/Edit/23" title="编辑">
                                         <i class="icon-edit bigger-120"></i>
@@ -1039,7 +1042,7 @@
 
                                 </div></span></td>
                                 <td class="span1 text-center">
-                              
+                                    <?php echo ($v["UserName"]); ?>
                                 </td>
                             </tr><?php endforeach; endif; ?>    
 
@@ -1047,6 +1050,7 @@
 
                     </table>
 
+						  <?php echo ($page); ?>  
                 </div>
  
                 <!-- END Dynamic Tables Section -->

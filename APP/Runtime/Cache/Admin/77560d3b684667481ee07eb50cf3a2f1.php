@@ -385,7 +385,7 @@
                                 <ul>
                                     <li>
                                         <a href="index.html" class=" active"><i class="glyphicon-display"></i>Dashboard</a>
-                                    </li>                                        z
+                                    </li>                                        
                                     <!-- 系统管理 -->
                                     <li>
                                         <a href="#" class="menu-link"><i class="icon-cogs"></i>系统管理<span>555</span></a>
@@ -395,7 +395,7 @@
                                                 <a href="#" class="submenu-link">总后台用户管理<span>555</span></a>
                                                 <ul>
                                                     <li>
-                                                        <a href="<?php echo U(GROUP_NAME.'/Adminuser/index');?>"><i class="icon-list"></i>总后台用户列表</a>
+                                                        <a href="<?php echo U(GROUP_NAME.'/Adminuser/index');?>" ><i class="icon-list"></i>总后台用户列表</a>
                                                     </li>
                                                     <li>
                                                         <a href="<?php echo U(GROUP_NAME.'/Adminuser/work');?>">在职人员</a>
@@ -437,8 +437,7 @@
                                                 <a href="#" class="submenu-link">权限角色管理<span>555</span></a>
                                                 <ul>
                                                     <li>
-                                                        <!-- <a href="<?php echo U(GROUP_NAME.'/Adminrole/index');?>" ><i class="icon-list"></i>权限角色列表</a> -->
-                                                        <a href="javascript:void(0)" data-name="<?php echo U(GROUP_NAME.'/Adminrole/index');?>" id="click"><i class="icon-list"></i>权限角色列表</a>
+                                                        <a href="<?php echo U(GROUP_NAME.'/Adminrole/index');?>" ><i class="icon-list"></i>权限角色列表</a>
                                                     </li>
                                                     <li>
                                                         <a href="<?php echo U(GROUP_NAME.'/Adminrole/adminrole');?>"><i class="icon-edit"></i>添加权限角色</a>
@@ -992,64 +991,229 @@
                 <!-- Breadcrumb -->
                 <!-- You can have the breadcrumb stick on scrolling just by adding the following attributes with their values (data-spy="affix" data-offset-top="250") -->
                 <!-- You can try it on other elements too :-), the sticky position and style can be adjusted in the css/main.css with .affix class -->
-                <ul class="breadcrumb" data-spy="affix" data-offset-top="250">
-                    <li>
-                        <a href="index.html"><i class="glyphicon-display"></i></a> <span class="divider"><i class="icon-angle-right"></i></span>
-                    </li>
-                    <li>
-                        <a href="#">Tables</a> <span class="divider"><i class="icon-angle-right"></i></span>
-                    </li>
-                    <li class="active"><a href="">Dynamic</a></li>
-                </ul>
-                <!-- END Breadcrumb -->
+                
+<div class="row">
+                        <div class="col-xs-12">
+                            <!-- PAGE CONTENT BEGINS -->
+                            
+<form action="/Publisher/SiteCase/Add" class="form-horizontal" method="post" role="form" novalidate="novalidate"><input name="__RequestVerificationToken" type="hidden" value="39YTvxRBfuuIOD1tKGBBXiwaAPUXb8zauw0-hzBNX9FOjj9OX4LUP1v16XTtbdvBgyGHGZXyvrvZoQPBpra45UKyWinJFDYlf0zLq-6n_Pp1E9hApJLp97E9umJuK7aBWTR7l3O8avcpXqEB4fbBIYvjr0R67pSOmOVNOfcybOQ1">    <div class="form-group">
+        <label class="col-sm-3 control-label no-padding-right" for="Title">楼盘小区</label>
+        <div class="col-sm-9">
+            <input class="col-sm-6" data-val="true" data-val-length="请勿超过50个字符！" data-val-length-max="50" data-val-required="请输入楼盘小区" id="Title" name="Title" type="text" value="">
+            <span class="help-inline col-sm-3">
+                <span class="field-validation-valid middle" data-valmsg-for="Title" data-valmsg-replace="true"></span>
+            </span>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-3 control-label no-padding-right" for="HouseArea">房屋面积</label>
+        <div class="col-sm-9">
+            <input class="col-sm-1" data-val="true" data-val-number="字段 房屋面积 必须是一个数字。" data-val-range="请输入1至9999之间的数字" data-val-range-max="9999" data-val-range-min="1" data-val-required="请输入房屋面积" id="HouseArea" name="HouseArea" type="text" value="">
+            <span class="help-inline col-sm-7">
+                平米
+                <span class="field-validation-valid middle" data-valmsg-for="HouseArea" data-valmsg-replace="true"></span>
+            </span>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-3 control-label no-padding-right" for="CategoryApartmentCategoryApartmentId">房屋类型</label>
+        <div class="col-sm-9">
+            <select class="col-sm-2" data-val="true" data-val-number="字段 房屋类型 必须是一个数字。" data-val-required="请选择房屋类型" id="CategoryApartmentCategoryApartmentId" name="CategoryApartmentCategoryApartmentId"><option value="1">普通</option>
+<option value="2">复式</option>
+<option value="3">别墅</option>
+</select>
+            <span class="help-inline col-sm-7">
+                <span class="field-validation-valid middle" data-valmsg-for="CategoryApartmentCategoryApartmentId" data-valmsg-replace="true"></span>
+            </span>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-3 control-label no-padding-right">请选择</label>
+        <div class="col-sm-9">
+            <select class="col-xs-3 col-sm-2 col-lg-1" data-val="true" data-val-number="字段 室 必须是一个数字。" data-val-range="请输入1至10之间的数字" data-val-range-max="10" data-val-range-min="1" data-val-required="请选择几室" id="S" name="S"><option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+            <span class="help-inline center col-xs-1 col-sm-2 col-lg-1">
+                <label class="middle">
+                    <span class="lbl"> 室</span>
+                </label>
+            </span>
+            <select class="col-xs-3 col-sm-2 col-lg-1" data-val="true" data-val-number="字段 厅 必须是一个数字。" data-val-range="请输入1至10之间的数字" data-val-range-max="10" data-val-range-min="1" data-val-required="请选择几厅" id="T" name="T"><option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+            <span class="help-inline center col-xs-1 col-sm-2 col-lg-1">
+                <label class="middle">
+                    <span class="lbl"> 厅</span>
+                </label>
+            </span>
+            <select class="col-xs-3 col-sm-2 col-lg-1" data-val="true" data-val-number="字段 卫 必须是一个数字。" data-val-range="请输入1至10之间的数字" data-val-range-max="10" data-val-range-min="1" data-val-required="请选择几卫" id="W" name="W"><option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+            <span class="help-inline center col-xs-1 col-sm-2  col-lg-1">
+                <label class="middle">
+                    <span class="lbl"> 卫</span>
+                </label>
+            </span>
+            <span class="help-inline col-xs-12 col-sm-7">
+                <span class="field-validation-valid middle" data-valmsg-for="S" data-valmsg-replace="true"></span>
+                <span class="field-validation-valid middle" data-valmsg-for="T" data-valmsg-replace="true"></span>
+                <span class="field-validation-valid middle" data-valmsg-for="W" data-valmsg-replace="true"></span>
+            </span>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-3 control-label no-padding-right" for="CategoryCostCategoryCostId">造价</label>
+        <div class="col-sm-9">
+            <select class="col-sm-2" data-val="true" data-val-number="字段 造价 必须是一个数字。" data-val-required="请选择造价" id="CategoryCostCategoryCostId" name="CategoryCostCategoryCostId"><option value="1">5万以下</option>
+<option value="2">5~6万</option>
+<option value="3">6~8万</option>
+<option value="4">8~10万</option>
+<option value="5">10~12万</option>
+<option value="6">12~15万</option>
+<option value="7">15~20万</option>
+<option value="8">20~30万</option>
+<option value="9">30~50万</option>
+<option value="10">50~100万</option>
+<option value="11">100万以上</option>
+</select>
+            <span class="help-inline col-sm-6">
+                <span class="field-validation-valid middle" data-valmsg-for="CategoryCostCategoryCostId" data-valmsg-replace="true"></span>
+            </span>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-3 control-label no-padding-right" for="Mode">装修方式</label>
+        <div class="col-sm-9">
+            <select class="col-sm-2" data-val="true" data-val-required="请选择装修方式" id="Mode" name="Mode"><option selected="selected" value="Part">半包</option>
+<option value="Full">全包</option>
+</select>
+            <span class="help-inline col-sm-6">
+                <span class="field-validation-valid middle" data-valmsg-for="Mode" data-valmsg-replace="true"></span>
+            </span>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-3 control-label no-padding-right" for="Type">装修类型</label>
+        <div class="col-sm-9">
+            <select class="col-sm-2" data-val="true" data-val-required="请选择装修类型" id="Type" name="Type"><option selected="selected" value="Home">家装</option>
+<option value="Business">公装</option>
+</select>
+            <span class="help-inline col-sm-6">
+                <span class="field-validation-valid middle" data-valmsg-for="Type" data-valmsg-replace="true"></span>
+            </span>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-3 control-label no-padding-right" for="CategoryStyleCategoryStyleId">设计风格</label>
+        <div class="col-sm-9">
+            <select class="col-sm-2" data-val="true" data-val-number="字段 设计风格 必须是一个数字。" data-val-required="请选择设计风格" id="CategoryStyleCategoryStyleId" name="CategoryStyleCategoryStyleId"><option value="1">东南亚风格</option>
+<option value="2">美式风格</option>
+<option value="3">西班牙风格</option>
+<option value="4">田园风格</option>
+<option value="5">地中海风格</option>
+<option value="6">简约风格</option>
+<option value="7">后现代风格</option>
+<option value="8">现代风格</option>
+<option value="9">自然幽雅</option>
+<option value="10">童趣风格</option>
+<option value="11">混搭风格</option>
+<option value="12">欧式古典</option>
+<option value="13">欧式现代</option>
+<option value="14">中式古典</option>
+<option value="15">中式现代</option>
+<option value="16">中西合璧</option>
+<option value="17">新古典主义</option>
+<option value="18">法式风格</option>
+<option value="19">北欧风格</option>
+<option value="20">简约欧式</option>
+</select>
+            <span class="help-inline col-sm-6">
+                <span class="field-validation-valid middle" data-valmsg-for="CategoryStyleCategoryStyleId" data-valmsg-replace="true"></span>
+            </span>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-3 control-label no-padding-right" for="Content">设计理念</label>
+        <div class="col-sm-9">
+            <textarea class="col-sm-6" cols="20" data-val="true" data-val-length="请勿超过200个字符！" data-val-length-max="200" data-val-required="请输入设计理念" id="Content" name="Content" rows="2"></textarea>
+            <span class="help-inline col-sm-3">
+                <span class="field-validation-valid middle" data-valmsg-for="Content" data-valmsg-replace="true"></span>
+            </span>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-3 control-label no-padding-right"></label>
+        <div class="col-sm-9">
+            <img id="FrontCoverImg" class="col-sm-4" src="/assets/avatars/avatar.png">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-3 control-label no-padding-right" for="FrontCoverImgUrl">案例封面</label>
+        <div class="col-sm-9">
+            <input data-val="true" data-val-length="请勿超过200个字符！" data-val-length-max="200" data-val-required="请上传案例封面" id="FrontCoverImgUrl" name="FrontCoverImgUrl" type="hidden" value="">
+            <div>
+                <span class="col-sm-9">
+                    <input type="button" id="J_selectImage" value="选择封面">
+                    <span class="field-validation-valid middle" data-valmsg-for="FrontCoverImgUrl" data-valmsg-replace="true"></span>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-3 control-label no-padding-right">案例图片</label>
+        <div class="col-sm-9">
+            <div>
+                <span class="col-sm-9">
+                    <input type="button" id="J_selectImage2" value="添加案例图片">
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-3 control-label no-padding-right"></label>
+        <div class="col-sm-9">
+            <ul class="ace-thumbnails">
+            </ul>
+        </div>
+    </div>
+    <div class="clearfix form-actions">
+        <div class="col-md-offset-3 col-md-9">
+            <button class="btn btn-info" type="submit">
+                <i class="icon-ok bigger-110"></i>
+                保存
+            </button>
+        </div>
+    </div>
+</form>
 
-                <!-- Dynamic Tables Section -->
-                <div class="block-section">
-                    <table id="example-datatables" class="table table-bordered table-hover">
-                        <thead>
-                            <tr>
-                                <th class="span1 text-center hidden-phone">编号&nbsp;&nbsp;</th>
-                                <th><i class="icon-user"></i>&nbsp;&nbsp;动作名</th>
-                                <th class="hidden-phone hidden-tablet"><i class="icon-lock bigger-110 hidden-480"></i>&nbsp;&nbsp;</i>动作标识</th>
-                                <th class="span2 hidden-phone"></th>
-                                <th class="span1 text-center"><i class="icon-bolt">用户名</i></th>
-                            </tr>
-                        </thead>
-                        <tbody>
 
-				
-						<?php if(is_array($list)): foreach($list as $key=>$v): ?><tr>
-                                <td class="span1 text-center hidden-phone"><?php echo ($v["AdminRoleId"]); ?></td>
-                                <td><a href="javascript:void(0)"><?php echo ($v["Name"]); ?></a></td>
-                                <td class="hidden-phone hidden-tablet"><?php echo ($v["ModuleKey"]); ?></td>
-                                <td class="span2 hidden-phone"><span class="label label-info"><div class="btn-group">
-                                    <a class="btn btn-xs btn-info" href="/system/adminuser/Edit/23" title="编辑">
-                                        <i class="icon-edit bigger-120"></i>
-                                    </a>
-                                    <a class="btn btn-xs btn-danger" href="/system/adminuser/switchlock/23" title="解锁" onclick="return confirm('确定解锁？')">
-                                        <i class="icon-unlock bigger-120"></i>
-                                    </a>
-                                    <a class="btn btn-xs btn-warning" href="/system/adminuser/reset/23" title="重置密码" onclick="return confirm('确定重置密码？')">
-                                        <i class="icon-key bigger-120"></i>
-                                    </a>
-
-                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Edit" class="btn btn-mini btn-success"><i class="icon-pencil"></i></a>
-                                        <a href="javascript:void(0)" data-toggle="tooltip" title="Delete" class="btn btn-mini btn-danger"><i class="icon-remove"></i></a>
-
-
-                                </div></span></td>
-                                <td class="span1 text-center">
-                              
-                                </td>
-                            </tr><?php endforeach; endif; ?>    
-
-                      </tbody>
-
-                    </table>
-
-                </div>
- 
-                <!-- END Dynamic Tables Section -->
+                            <!-- PAGE CONTENT ENDS -->
+                        </div><!-- /.col -->
+                    </div>
 
                 <!-- Dynamic Tables in the Grid -->
                 <h4 class="page-header">Dynamic Tables <small>In the grid</small></h4>
@@ -1218,9 +1382,6 @@
         <!-- Jquery plugins and custom javascript code -->
         <script src="../Public/js/plugins.js"></script>
         <script src="../Public/js/main.js"></script>
-       
-        <script type="text/javascript" src="../Public/js/menu.js"></script>
-
         <!-- Javascript code only for this page -->
         <script>
             $(function() {
@@ -1232,3 +1393,12 @@
         </script>
     </body>
 </html>
+
+
+
+
+
+	<form action="<?php echo U(GROUP_NAME.'/Publisher/addsitecase');?>" enctype="multipart/form-data" method="post">
+	<input   type="file" name="case">
+	<button type="submit">提交</button>
+	</form>

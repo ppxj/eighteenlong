@@ -1,0 +1,83 @@
+<Include file="Public:header" />
+            <!-- Page Content -->
+            <div id="page-content">
+                <!-- Breadcrumb -->
+                <!-- You can have the breadcrumb stick on scrolling just by adding the following attributes with their values (data-spy="affix" data-offset-top="250") -->
+                <!-- You can try it on other elements too :-), the sticky position and style can be adjusted in the css/main.css with .affix class -->
+                <ul class="breadcrumb" data-spy="affix" data-offset-top="250">
+                    <li>
+                        <a href="index.html"><i class="glyphicon-display"></i></a> <span class="divider"><i class="icon-angle-right"></i></span>
+                    </li>
+                    <li>
+                        <a href="#">Tables</a> <span class="divider"><i class="icon-angle-right"></i></span>
+                    </li>
+                    <li class="active"><a href="">Dynamic</a></li>
+                </ul>
+                <!-- END Breadcrumb -->
+
+                <!-- Dynamic Tables Section -->
+                <div class="block-section">
+                    <table id="example-datatables" class="table table-bordered table-hover">
+                        <thead>
+                            <tr>
+                                <th class="span1 text-center hidden-phone">编号&nbsp;&nbsp;</th>
+                                <th><i class="icon-user"></i>&nbsp;&nbsp;动作名</th>
+                                <th class="hidden-phone hidden-tablet"><i class="icon-lock bigger-110 hidden-480"></i>&nbsp;&nbsp;</i>动作标识</th>
+                                <th class="span2 hidden-phone"></th>
+                                <th class="span1 text-center"><i class="icon-bolt">用户名</i></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+				
+						<foreach name="list" item="v">
+                            <tr>
+                                <td class="span1 text-center hidden-phone">{$v.CategoryCostId}</td>
+                                <td><a href="javascript:void(0)">{$v.Name}</a></td>
+                                <td class="hidden-phone hidden-tablet">
+                                 <if condition="$v['IsOpen']"><i class="icon-unlock"></i>未锁定<else/><i class="icon-lock"></i>锁定</if>
+                              
+                                </td>
+                                <td class="span2 hidden-phone"><span class="label label-info"><div class="btn-group">
+                                    <a class="btn btn-xs btn-info" href="/system/adminuser/Edit/23" title="编辑">
+                                        <i class="icon-edit bigger-120"></i>
+                                    </a>
+                                    <a class="btn btn-xs btn-danger" href="/system/adminuser/switchlock/23" title="解锁" onclick="return confirm('确定解锁？')">
+                                        <i class="icon-unlock bigger-120"></i>
+                                    </a>
+                                    <a class="btn btn-xs btn-warning" href="/system/adminuser/reset/23" title="重置密码" onclick="return confirm('确定重置密码？')">
+                                        <i class="icon-key bigger-120"></i>
+                                    </a>
+
+                                    <a href="javascript:void(0)" data-toggle="tooltip" title="Edit" class="btn btn-mini btn-success"><i class="icon-pencil"></i></a>
+                                        <a href="javascript:void(0)" data-toggle="tooltip" title="Delete" class="btn btn-mini btn-danger"><i class="icon-remove"></i></a>
+
+
+                                </div></span></td>
+                                <td class="span1 text-center">
+                                    {$v.UserName}
+                                </td>
+                            </tr>
+                        </foreach>    
+
+                      </tbody>
+
+                    </table>
+
+						  {$page}  
+                </div>
+ 
+                <!-- END Dynamic Tables Section -->
+
+                <!-- Dynamic Tables in the Grid -->
+                <h4 class="page-header">Dynamic Tables <small>In the grid</small></h4>
+
+                <!-- Dynamic Tables in the Grid Content -->
+
+                <!-- div.row-fluid -->
+
+                <!-- END div.row-fluid -->
+                <!-- END Dynamic Tables in the Grid -->
+            </div>
+            <!-- END Page Content -->
+<Include file="Public:footer" />

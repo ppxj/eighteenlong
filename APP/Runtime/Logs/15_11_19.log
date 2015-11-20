@@ -1,0 +1,423 @@
+[ 2015-11-19T09:02:41+08:00 ] 0.0.0.0 /eighteenlong/index.php/admin/adminrole/adminrole.html
+ERR: 模板不存在[./APP/Modules/Admin/Tpl/Adminrole/adminrole.html]
+
+[ 2015-11-19T09:10:53+08:00 ] 0.0.0.0 /eighteenlong/index.php/admin/adminrole/index.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001082s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001181s ]
+SQL: SHOW COLUMNS FROM `adminroles` [ RunTime:0.048634s ]
+SQL: SELECT * FROM `adminroles`  [ RunTime:0.000321s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: ModuleKey D:\wamp\www\eighteenlong\APP\Runtime\Cache\Admin\0d587276ede51716f20a90a1c5389e7a.php 第 1024 行.
+NOTIC: [8] Undefined index: ModuleKey D:\wamp\www\eighteenlong\APP\Runtime\Cache\Admin\0d587276ede51716f20a90a1c5389e7a.php 第 1024 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.062697s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062800s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001708s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001133s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000893s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001415s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005431s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001305s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001397s ]
+
+[ 2015-11-19T09:11:14+08:00 ] 0.0.0.0 /eighteenlong/index.php/admin/adminrole/index.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001485s ]
+SQL: SHOW COLUMNS FROM `adminroles` [ RunTime:0.006868s ]
+SQL: SELECT * FROM `adminroles`  [ RunTime:0.000257s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: ModuleKey D:\wamp\www\eighteenlong\APP\Runtime\Cache\Admin\0d587276ede51716f20a90a1c5389e7a.php 第 1024 行.
+NOTIC: [8] Undefined index: ModuleKey D:\wamp\www\eighteenlong\APP\Runtime\Cache\Admin\0d587276ede51716f20a90a1c5389e7a.php 第 1024 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.046912s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047026s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002024s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001067s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000880s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001340s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005596s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001282s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001435s ]
+
+[ 2015-11-19T09:11:26+08:00 ] 0.0.0.0 /eighteenlong/index.php/admin/adminrole/index.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000757s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000853s ]
+SQL: SHOW COLUMNS FROM `adminroles` [ RunTime:0.006612s ]
+SQL: SELECT * FROM `adminroles`  [ RunTime:0.000260s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: ModuleKey D:\wamp\www\eighteenlong\APP\Runtime\Cache\Admin\0d587276ede51716f20a90a1c5389e7a.php 第 1024 行.
+NOTIC: [8] Undefined index: ModuleKey D:\wamp\www\eighteenlong\APP\Runtime\Cache\Admin\0d587276ede51716f20a90a1c5389e7a.php 第 1024 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.043641s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043750s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001373s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001168s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000793s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001407s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005019s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000861s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000950s ]
+
+[ 2015-11-19T09:12:28+08:00 ] 0.0.0.0 /eighteenlong/index.php/admin/adminrole/index.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000991s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001107s ]
+SQL: SHOW COLUMNS FROM `adminroles` [ RunTime:0.006733s ]
+SQL: SELECT * FROM `adminroles`  [ RunTime:0.000408s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: ModuleKey D:\wamp\www\eighteenlong\APP\Runtime\Cache\Admin\0d587276ede51716f20a90a1c5389e7a.php 第 1024 行.
+NOTIC: [8] Undefined index: ModuleKey D:\wamp\www\eighteenlong\APP\Runtime\Cache\Admin\0d587276ede51716f20a90a1c5389e7a.php 第 1024 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.043789s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043924s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001456s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000856s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000738s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001258s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004563s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001001s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001090s ]
+
+[ 2015-11-19T09:12:29+08:00 ] 0.0.0.0 /eighteenlong/index.php/admin/adminrole/index.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000900s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000999s ]
+SQL: SHOW COLUMNS FROM `adminroles` [ RunTime:0.006188s ]
+SQL: SELECT * FROM `adminroles`  [ RunTime:0.000546s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: ModuleKey D:\wamp\www\eighteenlong\APP\Runtime\Cache\Admin\0d587276ede51716f20a90a1c5389e7a.php 第 1024 行.
+NOTIC: [8] Undefined index: ModuleKey D:\wamp\www\eighteenlong\APP\Runtime\Cache\Admin\0d587276ede51716f20a90a1c5389e7a.php 第 1024 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.042753s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042869s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001523s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000894s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000781s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001319s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004772s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000864s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000955s ]
+
+[ 2015-11-19T09:12:30+08:00 ] 0.0.0.0 /eighteenlong/index.php/admin/adminrole/index.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000818s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000915s ]
+SQL: SHOW COLUMNS FROM `adminroles` [ RunTime:0.006295s ]
+SQL: SELECT * FROM `adminroles`  [ RunTime:0.000268s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: ModuleKey D:\wamp\www\eighteenlong\APP\Runtime\Cache\Admin\0d587276ede51716f20a90a1c5389e7a.php 第 1024 行.
+NOTIC: [8] Undefined index: ModuleKey D:\wamp\www\eighteenlong\APP\Runtime\Cache\Admin\0d587276ede51716f20a90a1c5389e7a.php 第 1024 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.043458s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043565s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001428s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000883s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000730s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001337s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004632s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000934s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001025s ]
+
+[ 2015-11-19T09:12:30+08:00 ] 0.0.0.0 /eighteenlong/index.php/admin/adminrole/index.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000784s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000899s ]
+SQL: SHOW COLUMNS FROM `adminroles` [ RunTime:0.006209s ]
+SQL: SELECT * FROM `adminroles`  [ RunTime:0.000318s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: ModuleKey D:\wamp\www\eighteenlong\APP\Runtime\Cache\Admin\0d587276ede51716f20a90a1c5389e7a.php 第 1024 行.
+NOTIC: [8] Undefined index: ModuleKey D:\wamp\www\eighteenlong\APP\Runtime\Cache\Admin\0d587276ede51716f20a90a1c5389e7a.php 第 1024 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.043017s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043127s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001354s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000852s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000686s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001219s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004365s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000916s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001005s ]
+
+[ 2015-11-19T09:14:00+08:00 ] 0.0.0.0 /eighteenlong/index.php/admin/adminrole/index.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001131s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001239s ]
+SQL: SHOW COLUMNS FROM `adminroles` [ RunTime:0.006376s ]
+SQL: SELECT * FROM `adminroles`  [ RunTime:0.000415s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: ModuleKey D:\wamp\www\eighteenlong\APP\Runtime\Cache\Admin\0d587276ede51716f20a90a1c5389e7a.php 第 1024 行.
+NOTIC: [8] Undefined index: ModuleKey D:\wamp\www\eighteenlong\APP\Runtime\Cache\Admin\0d587276ede51716f20a90a1c5389e7a.php 第 1024 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.045241s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045349s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001681s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001157s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000933s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001468s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005526s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001200s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001308s ]
+
+[ 2015-11-19T09:14:30+08:00 ] 0.0.0.0 /eighteenlong/index.php/admin/adminrole/index.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000859s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000956s ]
+SQL: SHOW COLUMNS FROM `adminroles` [ RunTime:0.006211s ]
+SQL: SELECT * FROM `adminroles`  [ RunTime:0.000396s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: ModuleKey D:\wamp\www\eighteenlong\APP\Runtime\Cache\Admin\0d587276ede51716f20a90a1c5389e7a.php 第 1024 行.
+NOTIC: [8] Undefined index: ModuleKey D:\wamp\www\eighteenlong\APP\Runtime\Cache\Admin\0d587276ede51716f20a90a1c5389e7a.php 第 1024 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.042769s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042883s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001488s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000936s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000791s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001303s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004785s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000940s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001027s ]
+
+[ 2015-11-19T09:14:32+08:00 ] 0.0.0.0 /eighteenlong/index.php/admin/adminrole/index.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000895s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000990s ]
+SQL: SHOW COLUMNS FROM `adminroles` [ RunTime:0.007014s ]
+SQL: SELECT * FROM `adminroles`  [ RunTime:0.000442s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: ModuleKey D:\wamp\www\eighteenlong\APP\Runtime\Cache\Admin\0d587276ede51716f20a90a1c5389e7a.php 第 1024 行.
+NOTIC: [8] Undefined index: ModuleKey D:\wamp\www\eighteenlong\APP\Runtime\Cache\Admin\0d587276ede51716f20a90a1c5389e7a.php 第 1024 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.043722s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043849s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001509s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000865s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000743s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001254s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004651s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000975s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001080s ]
+
+[ 2015-11-19T09:14:34+08:00 ] 0.0.0.0 /eighteenlong/index.php/admin/adminrole/index.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000835s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000933s ]
+SQL: SHOW COLUMNS FROM `adminroles` [ RunTime:0.006101s ]
+SQL: SELECT * FROM `adminroles`  [ RunTime:0.000363s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: ModuleKey D:\wamp\www\eighteenlong\APP\Runtime\Cache\Admin\0d587276ede51716f20a90a1c5389e7a.php 第 1024 行.
+NOTIC: [8] Undefined index: ModuleKey D:\wamp\www\eighteenlong\APP\Runtime\Cache\Admin\0d587276ede51716f20a90a1c5389e7a.php 第 1024 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.043268s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043393s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001408s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000875s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000808s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001493s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004855s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000971s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001060s ]
+
+[ 2015-11-19T09:14:36+08:00 ] 0.0.0.0 /eighteenlong/index.php/admin/adminrole/index.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000996s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001127s ]
+SQL: SHOW COLUMNS FROM `adminroles` [ RunTime:0.006493s ]
+SQL: SELECT * FROM `adminroles`  [ RunTime:0.000295s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: ModuleKey D:\wamp\www\eighteenlong\APP\Runtime\Cache\Admin\0d587276ede51716f20a90a1c5389e7a.php 第 1024 行.
+NOTIC: [8] Undefined index: ModuleKey D:\wamp\www\eighteenlong\APP\Runtime\Cache\Admin\0d587276ede51716f20a90a1c5389e7a.php 第 1024 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.047059s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047223s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001476s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000849s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000741s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001265s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004588s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000928s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001018s ]
+
+[ 2015-11-19T09:15:05+08:00 ] 0.0.0.0 /eighteenlong/index.php/admin/adminrole/index.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001244s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001389s ]
+SQL: SHOW COLUMNS FROM `adminroles` [ RunTime:0.006278s ]
+SQL: SELECT * FROM `adminroles`  [ RunTime:0.000403s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: ModuleKey D:\wamp\www\eighteenlong\APP\Runtime\Cache\Admin\0d587276ede51716f20a90a1c5389e7a.php 第 1024 行.
+NOTIC: [8] Undefined index: ModuleKey D:\wamp\www\eighteenlong\APP\Runtime\Cache\Admin\0d587276ede51716f20a90a1c5389e7a.php 第 1024 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.043040s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043149s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001632s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000884s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000790s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001369s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004960s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000964s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001052s ]
+
+[ 2015-11-19T09:15:07+08:00 ] 0.0.0.0 /eighteenlong/index.php/admin/adminrole/index.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000925s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001040s ]
+SQL: SHOW COLUMNS FROM `adminroles` [ RunTime:0.006291s ]
+SQL: SELECT * FROM `adminroles`  [ RunTime:0.000386s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: ModuleKey D:\wamp\www\eighteenlong\APP\Runtime\Cache\Admin\0d587276ede51716f20a90a1c5389e7a.php 第 1024 行.
+NOTIC: [8] Undefined index: ModuleKey D:\wamp\www\eighteenlong\APP\Runtime\Cache\Admin\0d587276ede51716f20a90a1c5389e7a.php 第 1024 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.042885s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043004s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001468s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000902s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000781s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001386s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004797s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000996s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001085s ]
+
+[ 2015-11-19T09:15:08+08:00 ] 0.0.0.0 /eighteenlong/index.php/admin/adminrole/index.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000805s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000904s ]
+SQL: SHOW COLUMNS FROM `adminroles` [ RunTime:0.006017s ]
+SQL: SELECT * FROM `adminroles`  [ RunTime:0.000259s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: ModuleKey D:\wamp\www\eighteenlong\APP\Runtime\Cache\Admin\0d587276ede51716f20a90a1c5389e7a.php 第 1024 行.
+NOTIC: [8] Undefined index: ModuleKey D:\wamp\www\eighteenlong\APP\Runtime\Cache\Admin\0d587276ede51716f20a90a1c5389e7a.php 第 1024 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.043769s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043878s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001609s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000832s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000694s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001182s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004575s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000874s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000963s ]
+
+[ 2015-11-19T09:15:08+08:00 ] 0.0.0.0 /eighteenlong/index.php/admin/adminrole/index.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000879s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `adminroles` [ RunTime:0.006300s ]
+SQL: SELECT * FROM `adminroles`  [ RunTime:0.000409s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: ModuleKey D:\wamp\www\eighteenlong\APP\Runtime\Cache\Admin\0d587276ede51716f20a90a1c5389e7a.php 第 1024 行.
+NOTIC: [8] Undefined index: ModuleKey D:\wamp\www\eighteenlong\APP\Runtime\Cache\Admin\0d587276ede51716f20a90a1c5389e7a.php 第 1024 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.043269s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043380s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001471s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000864s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000757s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001274s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004618s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000903s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000991s ]
+
+[ 2015-11-19T09:15:28+08:00 ] 0.0.0.0 /eighteenlong/index.php/admin/adminrole/index.html
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001145s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001245s ]
+SQL: SHOW COLUMNS FROM `adminroles` [ RunTime:0.006199s ]
+SQL: SELECT * FROM `adminroles`  [ RunTime:0.000436s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: ModuleKey D:\wamp\www\eighteenlong\APP\Runtime\Cache\Admin\0d587276ede51716f20a90a1c5389e7a.php 第 1024 行.
+NOTIC: [8] Undefined index: ModuleKey D:\wamp\www\eighteenlong\APP\Runtime\Cache\Admin\0d587276ede51716f20a90a1c5389e7a.php 第 1024 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.044117s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044234s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001693s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001321s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000816s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001246s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005350s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001494s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001614s ]
+
+[ 2015-11-19T13:34:03+08:00 ] 0.0.0.0 /eighteenlong/index.php/admin/user/work.html
+ERR: 无法加载模块:User
+
+[ 2015-11-19T16:10:35+08:00 ] 0.0.0.0 /eighteenlong/index.php/admin/adminrole/adminrole.html
+ERR: 模板不存在[./APP/Modules/Admin/Tpl/Adminrole/adminrole.html]
+
+[ 2015-11-19T16:17:01+08:00 ] 0.0.0.0 /eighteenlong/index.php/admin/publisher/addsitearticle.html
+ERR: 非法操作:addsitearticle
+
+[ 2015-11-19T16:28:07+08:00 ] 0.0.0.0 /eighteenlong/index.php/admin/system/index
+ERR: 非法操作:index
+
+[ 2015-11-19T16:28:16+08:00 ] 0.0.0.0 /eighteenlong/index.php/admin/system/adminuser
+ERR: 模板不存在[./APP/Modules/Admin/Tpl/System/adminuser.html]
+
+[ 2015-11-19T16:46:53+08:00 ] 0.0.0.0 /eighteenlong/index.php/admin/categorycost/index.html
+ERR: 模板不存在[./APP/Modules/Admin/Tpl/Categorycost/index.html]
+
+[ 2015-11-19T16:47:00+08:00 ] 0.0.0.0 /eighteenlong/index.php/admin/categorycost/categorycost.html
+ERR: 模板不存在[./APP/Modules/Admin/Tpl/Categorycost/categorycost.html]
+
+[ 2015-11-19T17:02:34+08:00 ] 0.0.0.0 /eighteenlong/index.php/admin/system/index.html
+ERR: 非法操作:index
+
+[ 2015-11-19T17:10:30+08:00 ] 0.0.0.0 /eighteenlong/index.php/admin/login/loginout.html
+ERR: 非法操作:loginout
+
+[ 2015-11-19T17:10:42+08:00 ] 0.0.0.0 /eighteenlong/index.php/admin/login/loginout.html
+ERR: 非法操作:loginout
+
+[ 2015-11-19T17:10:46+08:00 ] 0.0.0.0 /eighteenlong/index.php/admin/login/loginout.html
+ERR: 非法操作:loginout
+
+[ 2015-11-19T17:28:57+08:00 ] 127.0.0.1 /
+ERR: 无法加载模块:Index
+
+[ 2015-11-19T17:29:07+08:00 ] 127.0.0.1 /
+ERR: 无法加载模块:Index
+
+[ 2015-11-19T17:30:01+08:00 ] 127.0.0.1 /APP/Modules/Admin/Tpl/Public/css/fonts/fontawesome/fontawesome-webfont.woff?v=3.2.1
+ERR: 无法加载模块:APP
+
+[ 2015-11-19T17:30:02+08:00 ] 127.0.0.1 /APP/Modules/Admin/Tpl/Public/css/fonts/fontawesome/fontawesome-webfont.ttf?v=3.2.1
+ERR: 无法加载模块:APP
+
+[ 2015-11-19T17:30:23+08:00 ] 127.0.0.1 /index.php/admin/login/register.html
+ERR: 无法加载模块:Index.php
+
+[ 2015-11-19T17:30:27+08:00 ] 127.0.0.1 /index.php/admin/
+ERR: 无法加载模块:Index.php
+
+[ 2015-11-19T17:30:36+08:00 ] 0.0.0.0 /eighteenlong/index.php/admin/index/index.html
+ERR: 无法加载模块:Eighteenlong
+
+[ 2015-11-19T17:30:47+08:00 ] 0.0.0.0 /eighteenlong/index.php/admin/index/index.html
+ERR: 无法加载模块:Eighteenlong
+
+[ 2015-11-19T17:30:55+08:00 ] 0.0.0.0 /eighteenlong/index.php/admin/
+ERR: 无法加载模块:Eighteenlong
+
+[ 2015-11-19T17:31:06+08:00 ] 0.0.0.0 /eighteenlong/index.php/admin/system
+ERR: 无法加载模块:Eighteenlong
+

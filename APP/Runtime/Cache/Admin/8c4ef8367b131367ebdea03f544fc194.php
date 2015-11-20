@@ -357,7 +357,7 @@
                         <!-- Modal div is at the bottom of the page before including javascript code, we use .enable-tooltip class for the tooltip because data-toggle is used for modal -->
                         <a href="#modal-user-account" class="badge badge-success enable-tooltip" role="button" data-toggle="modal" data-placement="right" title="" data-original-title="Settings">
                             <i class="glyphicon-cogwheel"></i>
-                        </a>
+                            </a>
                         <a href="<?php echo U(GROUP_NAME.'/Login/logout');?>" class="badge badge-important" data-toggle="tooltip" data-placement="right" title="" data-original-title="Log out">
                             <i class="icon-signout"></i>
                         </a>
@@ -385,7 +385,7 @@
                                 <ul>
                                     <li>
                                         <a href="index.html" class=" active"><i class="glyphicon-display"></i>Dashboard</a>
-                                    </li>                                        
+                                    </li>                                        z
                                     <!-- 系统管理 -->
                                     <li>
                                         <a href="#" class="menu-link"><i class="icon-cogs"></i>系统管理<span>555</span></a>
@@ -395,16 +395,16 @@
                                                 <a href="#" class="submenu-link">总后台用户管理<span>555</span></a>
                                                 <ul>
                                                     <li>
-                                                        <a href="<?php echo U(GROUP_NAME.'/Adminuser/index');?>" ><i class="icon-list"></i>总后台用户列表</a>
+                                                        <a href="<?php echo U(GROUP_NAME.'/System/adminuser');?>"><i class="icon-list"></i>总后台用户列表</a>
                                                     </li>
                                                     <li>
-                                                        <a href="<?php echo U(GROUP_NAME.'/Adminuser/work');?>">在职人员</a>
+                                                        <a href="<?php echo U(GROUP_NAME.'/System/AdminuserWork');?>">在职人员</a>
                                                     </li>
                                                     <li>
-                                                        <a href="<?php echo U(GROUP_NAME.'/Adminuser/dimission');?>">离职人员</a>
+                                                        <a href="<?php echo U(GROUP_NAME.'/System/AdminuserDimission');?>">离职人员</a>
                                                     </li>
                                                     <li>
-                                                        <a href="<?php echo U(GROUP_NAME.'/Adminuser/adminuser');?>"><i class="icon-edit"></i>添加总后台用户</a>
+                                                        <a href="<?php echo U(GROUP_NAME.'/System/addAdminuser');?>"><i class="icon-edit"></i>添加总后台用户</a>
                                                     </li> 
                                                 </ul>
                                             </li>
@@ -413,10 +413,10 @@
                                                 <a href="#" class="submenu-link">权限动作管理<span>555</span></a>
                                                 <ul>
                                                     <li>
-                                                        <a href="<?php echo U(GROUP_NAME.'/Admin/index');?>" ><i class="icon-list"></i>权限动作列表</a>
+                                                        <a href="<?php echo U(GROUP_NAME.'/System/adminaction');?>" ><i class="icon-list"></i>权限动作列表</a>
                                                     </li>
                                                     <li>
-                                                        <a href="<?php echo U(GROUP_NAME.'/Admin/admin');?>"><i class="icon-edit"></i>添加权限动作</a>
+                                                        <a href="<?php echo U(GROUP_NAME.'/System/addadminaction');?>"><i class="icon-edit"></i>添加权限动作</a>
                                                     </li>
                                                 </ul>
                                             </li>
@@ -425,10 +425,10 @@
                                                 <a href="#" class="submenu-link">权限模块管理<span>555</span></a>
                                                 <ul>
                                                     <li>
-                                                        <a href="<?php echo U(GROUP_NAME.'/Adminmodule/index');?>" ><i class="icon-list"></i>权限模块列表</a>
+                                                        <a href="<?php echo U(GROUP_NAME.'/System/adminModule');?>" ><i class="icon-list"></i>权限模块列表</a>
                                                     </li>
                                                     <li>
-                                                        <a href="<?php echo U(GROUP_NAME.'/Adminmodule/Adminmodule');?>"><i class="icon-edit"></i>添加权限模块</a>
+                                                        <a href="<?php echo U(GROUP_NAME.'/System/');?>"><i class="icon-edit"></i>添加权限模块</a>
                                                     </li>
                                                 </ul>
                                             </li>
@@ -437,10 +437,11 @@
                                                 <a href="#" class="submenu-link">权限角色管理<span>555</span></a>
                                                 <ul>
                                                     <li>
-                                                        <a href="<?php echo U(GROUP_NAME.'/Adminrole/index');?>" ><i class="icon-list"></i>权限角色列表</a>
+                                                        <!-- <a href="<?php echo U(GROUP_NAME.'/Adminrole/index');?>" ><i class="icon-list"></i>权限角色列表</a> -->
+                                                        <a href="javascript:void(0)" data-name="<?php echo U(GROUP_NAME.'/System/index');?>" id="click"><i class="icon-list"></i>权限角色列表</a>
                                                     </li>
                                                     <li>
-                                                        <a href="<?php echo U(GROUP_NAME.'/Adminrole/adminrole');?>"><i class="icon-edit"></i>添加权限角色</a>
+                                                        <a href="<?php echo U(GROUP_NAME.'/System/adminrole');?>"><i class="icon-edit"></i>添加权限角色</a>
                                                     </li>
                                                 </ul>
                                             </li>
@@ -449,10 +450,10 @@
                                                 <a href="#" class="submenu-link">省份管理<span>555</span></a>
                                                 <ul>
                                                     <li>
-                                                        <a href="<?php echo U(GROUP_NAME.'/Province/index');?>" ><i class="icon-list"></i>省份列表</a>
+                                                        <a href="<?php echo U(GROUP_NAME.'/System/index');?>" ><i class="icon-list"></i>省份列表</a>
                                                     </li>
                                                     <li>
-                                                        <a href="<?php echo U(GROUP_NAME.'/Province/province');?>"><i class="icon-edit"></i>添加省份</a>
+                                                        <a href="<?php echo U(GROUP_NAME.'/System/province');?>"><i class="icon-edit"></i>添加省份</a>
                                                     </li>
                                                 </ul>
                                             </li>
@@ -462,10 +463,10 @@
                                                 <a href="#" class="submenu-link">城市管理<span>555</span></a>
                                                 <ul>
                                                     <li>
-                                                        <a href="<?php echo U(GROUP_NAME.'/City/index');?>" ><i class="icon-list"></i>城市列表</a>
+                                                        <a href="<?php echo U(GROUP_NAME.'/System/index');?>" ><i class="icon-list"></i>城市列表</a>
                                                     </li>
                                                     <li>
-                                                        <a href="<?php echo U(GROUP_NAME.'/City/city');?>"><i class="icon-edit"></i>添加城市</a>
+                                                        <a href="<?php echo U(GROUP_NAME.'/System/city');?>"><i class="icon-edit"></i>添加城市</a>
                                                     </li>
                                                 </ul>
                                             </li>
@@ -474,10 +475,10 @@
                                                 <a href="#" class="submenu-link">区县管理<span>555</span></a>
                                                 <ul>
                                                     <li>
-                                                        <a href="<?php echo U(GROUP_NAME.'/District/index');?>" ><i class="icon-list"></i>区县列表</a>
+                                                        <a href="<?php echo U(GROUP_NAME.'/System/index');?>" ><i class="icon-list"></i>区县列表</a>
                                                     </li>
                                                     <li>
-                                                        <a href="<?php echo U(GROUP_NAME.'/District/district');?>"><i class="icon-edit"></i>添加区县</a>
+                                                        <a href="<?php echo U(GROUP_NAME.'/System/district');?>"><i class="icon-edit"></i>添加区县</a>
                                                     </li>
                                                 </ul>
                                             </li>
@@ -486,10 +487,10 @@
                                                 <a href="#" class="submenu-link">房屋类型管理<span>555</span></a>
                                                 <ul>
                                                     <li>
-                                                        <a href="<?php echo U(GROUP_NAME.'/Categoryapartment/index');?>" ><i class="icon-list"></i>房屋类型列表</a>
+                                                        <a href="<?php echo U(GROUP_NAME.'/System/index');?>" ><i class="icon-list"></i>房屋类型列表</a>
                                                     </li>
                                                     <li>
-                                                        <a href="<?php echo U(GROUP_NAME.'/Categoryapartment/categoryapartment');?>"><i class="icon-edit"></i>添加房屋类型</a>
+                                                        <a href="<?php echo U(GROUP_NAME.'/System/categoryapartment');?>"><i class="icon-edit"></i>添加房屋类型</a>
                                                     </li>
                                                 </ul>
                                             </li>
@@ -498,10 +499,10 @@
                                                 <a href="#" class="submenu-link">造价预算管理<span>555</span></a>
                                                 <ul>
                                                     <li>
-                                                        <a href="<?php echo U(GROUP_NAME.'/Categorycost/index');?>" ><i class="icon-list"></i>造价预算列表</a>
+                                                        <a href="<?php echo U(GROUP_NAME.'/System/index');?>" ><i class="icon-list"></i>造价预算列表</a>
                                                     </li>
                                                     <li>
-                                                        <a href="<?php echo U(GROUP_NAME.'/Categorycost/categorycost');?>"><i class="icon-edit"></i>添加造价预算</a>
+                                                        <a href="<?php echo U(GROUP_NAME.'/System/categorycost');?>"><i class="icon-edit"></i>添加造价预算</a>
                                                     </li>
                                                 </ul>
                                             </li>
@@ -510,10 +511,10 @@
                                                 <a href="#" class="submenu-link">设计风格管理<span>555</span></a>
                                                 <ul>
                                                     <li>
-                                                        <a href="<?php echo U(GROUP_NAME.'/Categorystyle/index');?>" ><i class="icon-list"></i>设计风格列表</a>
+                                                        <a href="<?php echo U(GROUP_NAME.'/System/index');?>" ><i class="icon-list"></i>设计风格列表</a>
                                                     </li>
                                                     <li>
-                                                        <a href="<?php echo U(GROUP_NAME.'/Categorystyle/categorystyle');?>"><i class="icon-edit"></i>添加设计风格</a>
+                                                        <a href="<?php echo U(GROUP_NAME.'/System/categorystyle');?>"><i class="icon-edit"></i>添加设计风格</a>
                                                     </li>
                                                 </ul>
                                             </li>
@@ -522,10 +523,10 @@
                                                 <a href="#" class="submenu-link">设计专长管理<span>555</span></a>
                                                 <ul>
                                                     <li>
-                                                        <a href="<?php echo U(GROUP_NAME.'/Categoryexpertise/index');?>" ><i class="icon-list"></i>设计专长列表</a>
+                                                        <a href="<?php echo U(GROUP_NAME.'/System/index');?>" ><i class="icon-list"></i>设计专长列表</a>
                                                     </li>
                                                     <li>
-                                                        <a href="<?php echo U(GROUP_NAME.'/Categoryexpertise/categoryexpertise');?>"><i class="icon-edit"></i>添加设计专长</a>
+                                                        <a href="<?php echo U(GROUP_NAME.'/System/categoryexpertise');?>"><i class="icon-edit"></i>添加设计专长</a>
                                                     </li>
                                                 </ul>
                                             </li>
@@ -545,10 +546,10 @@
                                                 <a href="#" class="submenu-link">文章管理<span>555</span></a>
                                                 <ul>
                                                     <li>
-                                                        <a href="<?php echo U(GROUP_NAME.'/User/index');?>" ><i class="icon-list"></i>文章列表</a>
+                                                        <a href="<?php echo U(GROUP_NAME.'/Publisher/sitearticle');?>" ><i class="icon-list"></i>文章列表</a>
                                                     </li>
                                                     <li>
-                                                        <a href="<?php echo U(GROUP_NAME.'/User/work');?>"><i class="icon-edit"></i>发表文章</a>
+                                                        <a href="<?php echo U(GROUP_NAME.'/Publisher/addsitearticle');?>"><i class="icon-edit"></i>发表文章</a>
                                                     </li>
                                                 </ul>
                                             </li>
@@ -557,10 +558,10 @@
                                                 <a href="#" class="submenu-link">效果图管理<span>555</span></a>
                                                 <ul>
                                                     <li>
-                                                        <a href="page_ready_errors.html"><i class="icon-list"></i>效果图列表</a>
+                                                        <a href="<?php echo U(GROUP_NAME.'/Publisher/sitecase');?>"><i class="icon-list"></i>效果图列表</a>
                                                     </li>
                                                     <li>
-                                                        <a href="page_ready_standalone_error.html"><i class="icon-edit"></i>发布效果图</a>
+                                                        <a href="<?php echo U(GROUP_NAME.'/Publisher/addsitecase');?>"><i class="icon-edit"></i>发布效果图</a>
                                                     </li>
                                                 </ul>
                                             </li>
@@ -940,7 +941,10 @@
                                         <a href="page_landing.html"><i class="glyphicon-leaf"></i>Landing Page</a>
                                     </li>
                                     <li>
-                                        <a href="page_login.html"><i class="glyphicon-power"></i>Login Page</a>
+                                        <a href="<?php echo U(GROUP_NAME.'/Login/loginout');?>"><i class="glyphicon-power"></i>退出登录</a>
+                                    </li>
+                                    <li>
+                                        <a href="<?php echo U(GROUP_NAME.'/Login/loginout');?>"><i class="glyphicon-power"></i>Login Page</a>
                                     </li>
                                 </ul>
                             </nav>
@@ -977,7 +981,8 @@
             <!-- Pre Page Content -->
 				<!-- Pre Page Content -->
 	<div id="pre-page-content">
-	<h1><i class="glyphicon-dashboard themed-color"></i>Dashboard - shared on weidea.net<br><small>Welcome <strong>Admin</strong>, everything looks good!</small></h1>
+	<h1><i class="glyphicon-dashboard themed-color"></i>现在在使用的是十八龙企业后台管理<br><small>Welcome <strong>
+	<?php echo ($_SESSION['admname']); ?></strong></small></h1>
 	</div>
 	<!-- END Pre Page Content -->
             <!-- END Pre Page Content -->
@@ -1218,6 +1223,9 @@
         <!-- Jquery plugins and custom javascript code -->
         <script src="../Public/js/plugins.js"></script>
         <script src="../Public/js/main.js"></script>
+       
+        <script type="text/javascript" src="../Public/js/menu.js"></script>
+
         <!-- Javascript code only for this page -->
         <script>
             $(function() {

@@ -28,3 +28,21 @@ ERR: 非法操作:page_ready_user_profile
 [ 2015-11-17T14:42:47+08:00 ] 0.0.0.0 /eighteenlong/index.php/admin/categoryexpertise/page_ready_user_profile.html
 ERR: 非法操作:page_ready_user_profile
 
+[ 2015-11-17T15:25:58+08:00 ] 0.0.0.0 /eighteenlong/index.php/admin/user/index.html
+ERR: 无法加载模块:User
+
+[ 2015-11-17T15:36:30+08:00 ] 0.0.0.0 /eighteenlong/index.php/admin/user/index.html
+ERR: 无法加载模块:User
+
+[ 2015-11-17T15:36:53+08:00 ] 0.0.0.0 /eighteenlong/index.php/admin/Publisher/sitearticles.html
+ERR: 非法操作:sitearticles
+
+[ 2015-11-17T16:39:46+08:00 ] 0.0.0.0 /eighteenlong/index.php/admin/user/index.html
+ERR: 无法加载模块:User
+
+[ 2015-11-17T16:41:38+08:00 ] 0.0.0.0 /eighteenlong/index.php/admin/user/index.html
+ERR: 无法加载模块:User
+
+[ 2015-11-17T16:41:43+08:00 ] 0.0.0.0 /eighteenlong/index.php/admin/user/index.html
+ERR: 无法加载模块:User
+

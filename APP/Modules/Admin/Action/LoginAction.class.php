@@ -1,7 +1,7 @@
 <?php 
 	header("Content-Type:text/html; charset=utf-8");
 	/**
-	* 
+	登录判断
 	*/
 	class LoginAction extends Action
 	{
@@ -66,7 +66,9 @@
 		// 	Image::buildImageVerigy();
 
 		// }
-
+		/**
+		退出登录
+		*/
 
 		Public function logout(){
 			session_unset();

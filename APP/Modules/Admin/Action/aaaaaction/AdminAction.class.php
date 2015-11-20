@@ -1,6 +1,6 @@
 <?php 
 	/**
-	* 
+	* d
 	*/
 	class AdminAction extends CommonAction
 	{
